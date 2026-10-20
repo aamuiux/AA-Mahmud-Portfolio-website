@@ -5890,26 +5890,6 @@
           </div>
         </div>
 
-        <!-- Nav Links -->
-        <nav class="menu-nav" aria-label="Modal navigation">
-          <a href="#works" class="menu-nav-link" data-index="0">
-            <span class="menu-nav-num">01</span>
-            <span class="menu-nav-label">Works</span>
-          </a>
-          <a href="#about" class="menu-nav-link" data-index="1">
-            <span class="menu-nav-num">02</span>
-            <span class="menu-nav-label">About</span>
-          </a>
-          <a href="#process" class="menu-nav-link" data-index="2">
-            <span class="menu-nav-num">03</span>
-            <span class="menu-nav-label">Process</span>
-          </a>
-          <a href="#contact" class="menu-nav-link" data-index="3">
-            <span class="menu-nav-num">04</span>
-            <span class="menu-nav-label">Contact</span>
-          </a>
-        </nav>
-
         <!-- Bottom Block -->
         <div class="menu-bottom-block">
           <div>
@@ -6137,13 +6117,6 @@
     const menuBtn = document.getElementById('menu-btn');
     const menuCloseBtn = document.getElementById('menu-close-btn');
     const menuOverlay = document.getElementById('menu-overlay');
-    const menuLinks = document.querySelectorAll('.menu-nav-link');
-
-    // Stagger delays for menu links
-    menuLinks.forEach((link, idx) => {
-      const delay = 180 + (idx * 70);
-      link.style.transitionDelay = `${delay}ms`;
-    });
 
     function openMenu() {
       menuOverlay.classList.add('is-active');
@@ -6699,28 +6672,6 @@
     document.querySelectorAll('.site-header .nav-link').forEach((link) => {
       link.addEventListener('click', (e) => {
         const href = link.getAttribute('href');
-        if (href === '#works') {
-          e.preventDefault();
-          showShowcaseView('all', true);
-        } else if (currentView !== 'home') {
-          e.preventDefault();
-          showHomeView(false);
-          setTimeout(() => {
-            const targetEl = document.querySelector(href);
-            if (targetEl) {
-              if (lenis) lenis.scrollTo(targetEl, { duration: 1 });
-              else targetEl.scrollIntoView({ behavior: 'smooth' });
-            }
-          }, 320);
-        }
-      });
-    });
-
-    // Modal menu nav links integration
-    document.querySelectorAll('.menu-nav-link').forEach((link) => {
-      link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
-        if (typeof closeMenu === 'function') closeMenu();
         if (href === '#works') {
           e.preventDefault();
           showShowcaseView('all', true);
