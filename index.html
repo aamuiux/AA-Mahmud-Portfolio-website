@@ -648,20 +648,24 @@
       border-radius: 2px;
     }
     .hero-title {
-      max-width: 15ch;
-      font-size: 3.75rem;
-      line-height: 1.04;
+      max-width: 18ch;
+      font-size: clamp(2.2rem, 7.8vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
       margin-top: 1.5rem;
       color: var(--ink);
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
     @media (min-width: 640px) {
       .hero-title {
-        font-size: 4.5rem;
+        font-size: 4.25rem;
+        line-height: 1.04;
       }
     }
     @media (min-width: 1024px) {
       .hero-title {
-        font-size: 5.75rem;
+        font-size: 5.5rem;
       }
     }
     .hero-lead {
@@ -858,10 +862,11 @@
     @media (max-width: 1023px) {
       .site-archetypes-sidebar {
         transform: translateX(-100%);
-        width: 290px;
+        width: 300px;
         max-width: 86vw;
         box-shadow: 25px 0 60px rgba(0, 0, 0, 0.5);
         z-index: 100;
+        padding: 1.25rem 1.15rem max(2rem, env(safe-area-inset-bottom, 24px));
       }
       .site-archetypes-sidebar.is-open {
         transform: translateX(0);
@@ -1147,33 +1152,56 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 0.5rem;
+      gap: 0.75rem;
+      margin-top: 1rem;
+      padding-top: 0.85rem;
+      border-top: 1px dashed var(--line);
     }
     .sidebar-theme-toggle {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: transparent;
-      border: 1px dashed var(--line);
-      color: var(--ink-muted);
-      padding: 0.35rem 0.65rem;
-      font-size: 0.6875rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+      background: var(--surface-grey);
+      border: 1px solid var(--line-strong);
+      color: var(--ink);
+      padding: 0.45rem 0.85rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
       font-family: inherit;
       cursor: pointer;
-      border-radius: 2px;
+      border-radius: 4px;
       transition: all 0.2s ease;
     }
     .sidebar-theme-toggle:hover {
       color: var(--ink);
       border-color: var(--ink);
-      background: var(--surface-grey);
+      background: var(--surface-translucent);
+    }
+    .sidebar-theme-text {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .sidebar-location-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .sidebar-location-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10b981;
+      display: inline-block;
+      flex-shrink: 0;
+      box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
     }
     .sidebar-location-text {
-      font-size: 0.6875rem;
-      color: var(--ink-faint);
-      letter-spacing: 0.04em;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: 0.02em;
     }
 
     /* Mobile Backdrop & Trigger */
@@ -1280,15 +1308,17 @@
         width: 42px;
         height: 42px;
         padding: 0;
-        background: var(--surface-grey);
-        border: 1px solid var(--line);
+        background: transparent;
+        border: none;
         border-radius: 6px;
         cursor: pointer;
         flex-shrink: 0;
         color: var(--ink);
-        transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+        transition: background-color 0.2s ease, transform 0.15s ease;
       }
+      .mobile-burger-btn:hover,
       .mobile-burger-btn:active {
+        background: var(--surface-grey);
         transform: scale(0.94);
       }
       .burger-bar {
@@ -2787,18 +2817,13 @@
       margin-bottom: 1.5rem;
     }
     .about-photos-grid {
-      margin-top: 4rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    @media (min-width: 640px) {
-      .about-photos-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+      display: none;
     }
     @media (min-width: 1024px) {
       .about-photos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
         margin-top: 5rem;
       }
     }
@@ -3175,11 +3200,16 @@
     .pre-footer-cta-section {
       background: var(--surface-grey);
       color: var(--ink);
-      padding: 6rem 1.5rem 5rem;
+      padding: 4.5rem 1.25rem 4rem;
       border-top: 1px dashed var(--line);
       transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
       position: relative;
       overflow: hidden;
+    }
+    @media (min-width: 640px) {
+      .pre-footer-cta-section {
+        padding: 5.5rem 2rem 4.5rem;
+      }
     }
     @media (min-width: 1024px) {
       .pre-footer-cta-section {
@@ -3188,22 +3218,28 @@
     }
     .cta-container {
       max-width: 80rem;
+      width: 100%;
       margin-inline: auto;
+      box-sizing: border-box;
     }
     .cta-status-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.625rem;
-      font-size: 0.75rem;
+      gap: 0.5rem;
+      font-size: 0.72rem;
       font-weight: 500;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #059669;
       background: rgba(16, 185, 129, 0.1);
       border: 1px solid rgba(16, 185, 129, 0.28);
-      padding: 0.45rem 1rem;
+      padding: 0.45rem 0.85rem;
       border-radius: 9999px;
       margin-bottom: 2rem;
+      max-width: 100%;
+      box-sizing: border-box;
+      line-height: 1.4;
+      flex-wrap: wrap;
     }
     html.dark .cta-status-badge {
       color: #34d399;
@@ -3224,6 +3260,8 @@
       gap: 2.5rem;
       align-items: start;
       margin-bottom: 4rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     @media (min-width: 1024px) {
       .cta-main-grid {
@@ -3261,15 +3299,19 @@
       background: var(--canvas);
       border: 1px dashed var(--line-strong);
       border-radius: 4px;
-      padding: 2rem;
+      padding: 1.5rem 1.25rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.25rem;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
       transition: background-color 0.35s ease, border-color 0.35s ease;
     }
     @media (min-width: 640px) {
       .cta-actions-card {
-        padding: 2.5rem;
+        padding: 2.25rem;
+        gap: 1.5rem;
       }
     }
     .cta-actions-card-title {
@@ -3289,27 +3331,31 @@
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
+      width: 100%;
+      box-sizing: border-box;
     }
-    @media (min-width: 480px) {
+    @media (min-width: 640px) {
       .cta-actions-btn-group {
         flex-direction: row;
         align-items: stretch;
       }
     }
     .cta-copy-btn {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 0.75rem;
       background: transparent;
       border: 1px dashed var(--line);
       color: var(--ink);
-      padding: 1rem 1.25rem;
+      padding: 0.875rem 1rem;
       font-size: 0.875rem;
       font-family: inherit;
       cursor: pointer;
       transition: all 0.25s ease;
-      white-space: nowrap;
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
     }
     .cta-copy-btn:hover {
       background: var(--surface-grey);
@@ -3325,6 +3371,12 @@
       border-radius: 2px;
       color: var(--ink-muted);
       transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+    #cta-email-display-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .cta-direct-note {
       font-size: 0.75rem;
@@ -3334,6 +3386,7 @@
       align-items: center;
       gap: 0.5rem;
       letter-spacing: 0.02em;
+      line-height: 1.4;
     }
     .cta-socials-header {
       display: flex;
@@ -3824,26 +3877,10 @@
         </button>
       </div>
 
-      <!-- Sidebar Meta Facts: Role Level, Experience & Focus Areas -->
-      <div class="sidebar-facts-card" aria-label="Professional focus facts">
-        <div class="sidebar-fact-item">
-          <span class="sidebar-fact-label">Role Level</span>
-          <span class="sidebar-fact-val">Lead UI/UX Designer</span>
-        </div>
-        <div class="sidebar-fact-item">
-          <span class="sidebar-fact-label">Experience</span>
-          <span class="sidebar-fact-val">12+ Years Product Leadership</span>
-        </div>
-        <div class="sidebar-fact-item">
-          <span class="sidebar-fact-label">Focus Areas</span>
-          <span class="sidebar-fact-val">Enterprise SaaS · Design Systems · AI UX</span>
-        </div>
-      </div>
-
       <div class="sidebar-meta-footer">
         <button class="sidebar-theme-toggle" id="sidebar-theme-toggle" type="button" aria-label="Toggle theme mode" title="Toggle theme mode">
           <span class="theme-toggle-icon-wrap" aria-hidden="true">
-            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="4"></circle>
               <path d="M12 2v2"></path>
               <path d="M12 20v2"></path>
@@ -3854,14 +3891,20 @@
               <path d="M6.34 17.66l-1.41 1.41"></path>
               <path d="M19.07 4.93l-1.41 1.41"></path>
             </svg>
-            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </span>
-          <span class="sidebar-theme-text">Theme</span>
+          <span class="sidebar-theme-text">
+            <span class="mode-dark">Dark Mode</span>
+            <span class="mode-light">Light Mode</span>
+          </span>
         </button>
 
-        <span class="sidebar-location-text">Dhaka · Global</span>
+        <div class="sidebar-location-wrap">
+          <span class="sidebar-location-dot" aria-hidden="true"></span>
+          <span class="sidebar-location-text">Dhaka · Global</span>
+        </div>
       </div>
     </div>
 
@@ -3929,8 +3972,9 @@
           </div>
 
           <h1 class="hero-title" data-motion="line" data-stagger="140">
-            <span class="line-mask"><span class="line-inner">Design that lifts onboarding,</span></span>
-            <span class="line-mask"><span class="line-inner">retention <span class="accent">and</span> revenue.</span></span>
+            <span class="line-mask"><span class="line-inner">Design that lifts</span></span>
+            <span class="line-mask"><span class="line-inner">onboarding, retention</span></span>
+            <span class="line-mask"><span class="line-inner"><span class="accent">and</span> revenue.</span></span>
           </h1>
 
           <p class="hero-lead" data-motion="word" data-delay="500" data-stagger="18">AA Mahmud is a seasoned Lead UI/UX Designer partnering with tech enterprises, venture-backed scale-ups, and product founders. Over 12+ years, I have led product design from discovery and user research to multi-brand design systems at scale — turning complex workflows into intuitive, high-converting digital experiences that accelerate ARR and user retention.</p>
