@@ -547,14 +547,15 @@
     /* Hero Section */
     .hero-section {
       position: relative;
-      min-height: 100svh;
-      padding: 4.5rem 1.5rem 4rem;
+      min-height: calc(100svh - 58px);
+      padding: 2.75rem 1.5rem 3.5rem;
       display: flex;
       align-items: center;
       overflow: hidden;
     }
     @media (min-width: 1024px) {
       .hero-section {
+        min-height: 100svh;
         padding: 5rem 3rem 4rem;
       }
     }
@@ -677,30 +678,44 @@
       gap: 1rem;
     }
     .hero-facts-row {
-      display: none;
-      margin-top: 3rem;
-      border-top: 1px solid var(--line);
-      padding-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+      margin-top: 2.25rem;
+      border-top: 1px dashed var(--line);
+      padding-top: 1.75rem;
       max-width: 50rem;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 640px) {
       .hero-facts-row {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
       }
     }
+    .fact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
     .fact-item dt {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       color: var(--ink-faint);
     }
     .fact-item dd {
-      font-size: 0.875rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
       color: var(--ink);
-      margin-top: 0.25rem;
+      margin-top: 0.2rem;
       margin-left: 0;
+      line-height: 1.4;
     }
     .hero-scroll-cue {
       margin-top: 3rem;
@@ -1200,23 +1215,130 @@
     .mobile-archetype-trigger:active {
       transform: scale(0.96);
     }
-    @media (min-width: 1024px) {
-      .mobile-archetype-trigger {
-        display: none !important;
+    .mobile-archetype-trigger {
+      display: none !important;
+    }
+
+    /* Mobile Sticky Top Header (< 1024px) */
+    .mobile-sticky-header {
+      display: none;
+    }
+    @media (max-width: 1023px) {
+      .mobile-sticky-header {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 85;
+        background: var(--surface-translucent);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
+        transition: background-color 0.35s ease, border-color 0.35s ease;
+      }
+      .mobile-header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.85rem 1.25rem;
+        gap: 0.75rem;
+      }
+      .mobile-header-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+        text-decoration: none;
+        color: var(--ink);
+        min-width: 0;
+      }
+      .mobile-brand-name {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        color: var(--ink);
+      }
+      .mobile-brand-subtitle {
+        font-size: 0.6875rem;
+        color: var(--ink-muted);
+        letter-spacing: 0.04em;
+        font-weight: 500;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .mobile-burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        background: var(--surface-grey);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        cursor: pointer;
+        flex-shrink: 0;
+        color: var(--ink);
+        transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+      }
+      .mobile-burger-btn:active {
+        transform: scale(0.94);
+      }
+      .burger-bar {
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        border-radius: 2px;
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+        transform-origin: center;
+      }
+      .mobile-burger-btn.is-active .burger-bar-top {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .mobile-burger-btn.is-active .burger-bar-mid {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      .mobile-burger-btn.is-active .burger-bar-bot {
+        transform: translateY(-7px) rotate(-45deg);
       }
     }
-    .trigger-diamond {
-      width: 6px;
-      height: 6px;
-      border: 1px solid currentColor;
-      transform: rotate(45deg);
+
+    /* Sidebar Meta Facts (Role Level, Experience, Focus Areas) */
+    .sidebar-facts-card {
+      margin-top: 0.85rem;
+      padding: 0.75rem 0.85rem;
+      background: var(--surface-grey);
+      border: 1px dashed var(--line);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
     }
-    .trigger-count {
-      font-family: "Space Grotesk", sans-serif;
-      background: rgba(255, 255, 255, 0.12);
-      padding: 0.15rem 0.45rem;
-      border-radius: 999px;
+    .sidebar-fact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .sidebar-fact-label {
+      font-size: 0.625rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--ink-faint);
+      font-weight: 600;
+    }
+    .sidebar-fact-val {
       font-size: 0.75rem;
+      color: var(--ink);
+      font-weight: 500;
+      line-height: 1.35;
     }
 
     .meta-card-badge {
@@ -1547,11 +1669,25 @@
     .sidebar-profile-card.is-active {
       border-color: var(--ink);
     }
-    .profile-card-top {
+    .profile-card-header-row {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.45rem;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .profile-card-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 1.5px solid var(--line);
+      flex-shrink: 0;
+      background: var(--surface-grey);
+    }
+    .profile-card-info {
+      flex: 1;
+      min-width: 0;
     }
     .profile-card-status-dot {
       width: 6px;
@@ -1561,18 +1697,18 @@
       box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
     }
     .profile-card-name {
-      font-size: 1.0625rem;
-      font-weight: 500;
+      font-size: 0.9375rem;
+      font-weight: 600;
       color: var(--ink);
-      line-height: 1.25;
-      margin: 0 0 0.15rem;
+      line-height: 1.2;
+      margin: 0;
     }
     .profile-card-role {
-      font-size: 0.6875rem;
+      font-size: 0.625rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       color: var(--ink-muted);
-      margin: 0 0 0.75rem;
+      margin: 0.2rem 0 0;
     }
     .profile-view-link {
       display: flex;
@@ -3672,15 +3808,36 @@
     <!-- Bottom Block: Deliverables, Theme Toggle & Meta -->
     <div class="sidebar-bottom-block">
       <div class="sidebar-profile-card" id="sidebar-profile-card">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
-          <h3 class="profile-card-name" style="margin: 0;">Abdullah Al Mahmud</h3>
-          <span class="profile-card-status-dot" aria-hidden="true" title="Available"></span>
+        <div class="profile-card-header-row">
+          <img src="/src/assets/images/aa-mahmud.jpg" alt="Abdullah Al Mahmud" class="profile-card-avatar" width="46" height="46" loading="lazy" />
+          <div class="profile-card-info">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.35rem;">
+              <h3 class="profile-card-name" style="margin: 0;">AA Mahmud</h3>
+              <span class="profile-card-status-dot" aria-hidden="true" title="Available"></span>
+            </div>
+            <p class="profile-card-role">Lead UI/UX · 12+ Yrs</p>
+          </div>
         </div>
-        <p class="profile-card-role">Lead UI/UX Designer · 12+ Yrs</p>
         <button type="button" class="profile-view-link" id="sidebar-view-profile-btn" aria-label="View Full Profile of Abdullah Al Mahmud">
           <span>View Profile</span>
           <span class="profile-link-arrow" aria-hidden="true">→</span>
         </button>
+      </div>
+
+      <!-- Sidebar Meta Facts: Role Level, Experience & Focus Areas -->
+      <div class="sidebar-facts-card" aria-label="Professional focus facts">
+        <div class="sidebar-fact-item">
+          <span class="sidebar-fact-label">Role Level</span>
+          <span class="sidebar-fact-val">Lead UI/UX Designer</span>
+        </div>
+        <div class="sidebar-fact-item">
+          <span class="sidebar-fact-label">Experience</span>
+          <span class="sidebar-fact-val">12+ Years Product Leadership</span>
+        </div>
+        <div class="sidebar-fact-item">
+          <span class="sidebar-fact-label">Focus Areas</span>
+          <span class="sidebar-fact-val">Enterprise SaaS · Design Systems · AI UX</span>
+        </div>
       </div>
 
       <div class="sidebar-meta-footer">
@@ -3722,6 +3879,22 @@
 
   <!-- Main Site Wrapper (Offset for full-height left sidebar on desktop) -->
   <div class="site-page-wrapper">
+
+    <!-- Mobile Sticky Top Header (< 1024px) -->
+    <header class="mobile-sticky-header" id="mobile-sticky-header" aria-label="Mobile Navigation Header">
+      <div class="mobile-header-inner">
+        <a href="#top" class="mobile-header-brand" id="mobile-header-brand" aria-label="AA Mahmud — Return to Home">
+          <span class="mobile-brand-name">AA Mahmud</span>
+          <span class="mobile-brand-subtitle">Lead UI/UX Designer &amp; AI Strategist</span>
+        </a>
+        
+        <button class="mobile-burger-btn" id="mobile-burger-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-archetypes-sidebar">
+          <span class="burger-bar burger-bar-top" aria-hidden="true"></span>
+          <span class="burger-bar burger-bar-mid" aria-hidden="true"></span>
+          <span class="burger-bar burger-bar-bot" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
 
   <main>
     <!-- Home Page View Panel (Default, fades out when category is selected) -->
@@ -3771,7 +3944,7 @@
             </a>
           </div>
 
-          <div class="hero-facts-row motion-fade" data-motion="fade" data-delay="1000">
+          <div class="hero-facts-row" id="hero-facts-row">
             <div class="fact-item">
               <dt>Role Level</dt>
               <dd>Lead UI/UX Designer</dd>
@@ -6263,23 +6436,54 @@
     const sidebarBackdrop = document.getElementById('sidebar-mobile-backdrop');
     const mobileTrigger = document.getElementById('mobile-archetype-trigger');
     const sidebarCloseBtn = document.getElementById('sidebar-mobile-close');
+    const mobileBurgerBtn = document.getElementById('mobile-burger-btn');
+    const mobileHeaderBrand = document.getElementById('mobile-header-brand');
 
     // Mobile Sidebar Drawer open/close
     function openMobileSidebar() {
       if (siteSidebar) siteSidebar.classList.add('is-open');
       if (sidebarBackdrop) sidebarBackdrop.classList.add('is-active');
+      if (mobileBurgerBtn) {
+        mobileBurgerBtn.classList.add('is-active');
+        mobileBurgerBtn.setAttribute('aria-expanded', 'true');
+      }
       document.documentElement.style.overflow = 'hidden';
     }
 
     function closeMobileSidebar() {
       if (siteSidebar) siteSidebar.classList.remove('is-open');
       if (sidebarBackdrop) sidebarBackdrop.classList.remove('is-active');
+      if (mobileBurgerBtn) {
+        mobileBurgerBtn.classList.remove('is-active');
+        mobileBurgerBtn.setAttribute('aria-expanded', 'false');
+      }
       document.documentElement.style.overflow = '';
     }
 
+    function toggleMobileSidebar() {
+      if (siteSidebar && siteSidebar.classList.contains('is-open')) {
+        closeMobileSidebar();
+      } else {
+        openMobileSidebar();
+      }
+    }
+
+    if (mobileBurgerBtn) mobileBurgerBtn.addEventListener('click', toggleMobileSidebar);
     if (mobileTrigger) mobileTrigger.addEventListener('click', openMobileSidebar);
     if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeMobileSidebar);
     if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeMobileSidebar);
+
+    if (mobileHeaderBrand) {
+      mobileHeaderBrand.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentView !== 'home') {
+          showHomeView(true);
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        if (window.innerWidth < 1024) closeMobileSidebar();
+      });
+    }
 
     // Archetype Category & Dedicated Showcase Controller
     const homeView = document.getElementById('home-view');
