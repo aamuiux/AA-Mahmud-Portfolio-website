@@ -178,6 +178,17 @@
       transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
       white-space: nowrap;
     }
+    @media (max-width: 640px) {
+      .cta-btn {
+        padding: 0.85rem 1.15rem;
+        font-size: 0.8125rem;
+        letter-spacing: 0.08em;
+        white-space: normal;
+        text-align: center;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+    }
     .cta-btn .arrow {
       display: inline-block;
       transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1860,9 +1871,12 @@
     .profile-view-panel {
       min-height: 100vh;
       min-height: 100dvh;
-      padding: 1.25rem 1.5rem 6rem;
+      padding: 1.25rem 1.25rem 6rem;
       max-width: 120rem;
       margin-inline: auto;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
     @media (min-width: 768px) {
       .profile-view-panel {
@@ -1878,26 +1892,38 @@
     /* Profile Header & Hero */
     .profile-header-wrap {
       border-bottom: 1px dashed var(--line);
-      padding-bottom: 3.5rem;
+      padding-bottom: 2.75rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    @media (min-width: 1024px) {
+      .profile-header-wrap {
+        padding-bottom: 3.5rem;
+      }
     }
     .profile-hero-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 3rem;
-      margin-top: 2rem;
+      gap: 2.25rem;
+      margin-top: 1.75rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     @media (min-width: 1024px) {
       .profile-hero-grid {
         grid-template-columns: 1.4fr 1fr;
         align-items: start;
         gap: 5rem;
+        margin-top: 2rem;
       }
     }
     .profile-hero-title {
-      font-size: 3rem;
+      font-size: clamp(2.2rem, 8vw, 3rem);
       line-height: 1.05;
       color: var(--ink);
       letter-spacing: -0.02em;
+      word-break: normal;
+      overflow-wrap: break-word;
     }
     @media (min-width: 768px) {
       .profile-hero-title {
@@ -1905,24 +1931,71 @@
       }
     }
     .profile-hero-subtitle {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       color: var(--ink-muted);
-      margin-top: 1rem;
-      line-height: 1.4;
+      margin-top: 0.85rem;
+      line-height: 1.45;
       font-weight: 400;
+      word-break: normal;
+      overflow-wrap: break-word;
+    }
+    @media (min-width: 768px) {
+      .profile-hero-subtitle {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+      }
     }
     .profile-hero-bio {
-      font-size: 1.0625rem;
-      line-height: 1.7;
+      font-size: 1rem;
+      line-height: 1.65;
       color: var(--ink-muted);
-      margin-top: 1.75rem;
+      margin-top: 1.5rem;
       max-width: 65ch;
+      word-break: normal;
+      overflow-wrap: break-word;
+    }
+    @media (min-width: 768px) {
+      .profile-hero-bio {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+        margin-top: 1.75rem;
+      }
+    }
+    .profile-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    @media (max-width: 640px) {
+      .profile-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        margin-top: 1.75rem;
+      }
+      .profile-hero-actions .cta-btn {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        text-align: center;
+        padding: 0.85rem 1.15rem;
+        font-size: 0.8125rem;
+        letter-spacing: 0.08em;
+        white-space: normal;
+      }
     }
     .profile-portrait-wrap {
       border: 1px dashed var(--line);
       background: var(--surface-grey);
       overflow: hidden;
       position: relative;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
     .profile-portrait-wrap img {
       width: 100%;
@@ -1947,16 +2020,32 @@
       align-items: center;
       gap: 0.5rem;
       border-radius: 2px;
+      max-width: calc(100% - 2.5rem);
+      box-sizing: border-box;
+    }
+    @media (max-width: 640px) {
+      .profile-verified-badge {
+        bottom: 0.75rem;
+        left: 0.75rem;
+        right: 0.75rem;
+        max-width: calc(100% - 1.5rem);
+        padding: 0.45rem 0.65rem;
+        font-size: 0.6875rem;
+        letter-spacing: 0.05em;
+        line-height: 1.3;
+      }
     }
 
     /* Quantitative Stats Bar */
     .profile-stats-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
-      padding-top: 2.5rem;
+      gap: 1.25rem;
+      margin-top: 2.25rem;
+      padding-top: 2rem;
       border-top: 1px dashed var(--line);
+      width: 100%;
+      box-sizing: border-box;
     }
     @media (min-width: 768px) {
       .profile-stats-grid {
@@ -2901,10 +2990,29 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 1rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     .about-heading-actions .cta-btn {
       font-size: 0.8125rem;
       padding: 0.875rem 1.625rem;
+    }
+    @media (max-width: 640px) {
+      .about-heading-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        margin-top: 1.75rem;
+      }
+      .about-heading-actions .cta-btn {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0.85rem 1.15rem;
+        justify-content: center;
+        text-align: center;
+        white-space: normal;
+      }
     }
 
     .about-p {
@@ -5751,12 +5859,14 @@
           </p>
 
           <!-- Action Buttons -->
-          <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.25rem;">
+          <div class="profile-hero-actions">
             <a href="mailto:aam.uiux@gmail.com?subject=Strategic%20Briefing%20Inquiry" class="cta-btn solid-light">
-              Initiate Strategic Briefing <span class="arrow" aria-hidden="true">→</span>
+              <span>Initiate Strategic Briefing</span>
+              <span class="arrow" aria-hidden="true">→</span>
             </a>
             <a href="#experience" id="profile-scroll-exp-btn" class="cta-btn ghost-light">
-              Explore Career Record <span class="arrow" aria-hidden="true">↓</span>
+              <span>Explore Career Record</span>
+              <span class="arrow" aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
