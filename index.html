@@ -2107,12 +2107,44 @@
     }
 
     /* Career Timeline */
+    /* Career Timeline with Left Spine Line (matching timeline spine specification) */
     .profile-timeline-list {
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
+      padding-left: 2.75rem;
+    }
+    @media (max-width: 640px) {
+      .profile-timeline-list {
+        padding-left: 2rem;
+      }
+    }
+    /* Vertical Continuous Spine Line */
+    .profile-timeline-list::before {
+      content: "";
+      position: absolute;
+      top: 2.35rem;
+      bottom: 2.35rem;
+      left: 10px;
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        #e5a93b 0%,
+        #e5a93b 15%,
+        rgba(229, 169, 59, 0.45) 28%,
+        var(--line) 42%,
+        var(--line) 100%
+      );
+      z-index: 1;
+    }
+    @media (max-width: 640px) {
+      .profile-timeline-list::before {
+        left: 8px;
+      }
     }
     .profile-timeline-item {
+      position: relative;
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.25rem;
@@ -2130,6 +2162,69 @@
     }
     .profile-timeline-item:hover {
       border-color: var(--ink);
+    }
+    /* Timeline Node on Spine Line */
+    .profile-timeline-item::before {
+      content: "";
+      position: absolute;
+      left: calc(-2.75rem + 5px);
+      top: 2.35rem;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      z-index: 2;
+      box-sizing: border-box;
+      transition: all 0.25s ease;
+    }
+    @media (max-width: 640px) {
+      .profile-timeline-item::before {
+        left: calc(-2rem + 3px);
+      }
+    }
+    /* First item (Present / Active Role): Glowing Amber Dot with Halo */
+    .profile-timeline-item:first-child::before,
+    .profile-timeline-item.is-current::before {
+      background: #e5a93b;
+      border: none;
+      box-shadow: 0 0 0 5px rgba(229, 169, 59, 0.25), 0 0 14px rgba(229, 169, 59, 0.5);
+    }
+    /* Subsequent items: Outlined Ring Nodes */
+    .profile-timeline-item:not(:first-child)::before {
+      background: var(--bg);
+      border: 2px solid var(--ink-faint);
+    }
+    .profile-timeline-item:not(:first-child):hover::before {
+      border-color: #e5a93b;
+      box-shadow: 0 0 0 4px rgba(229, 169, 59, 0.2);
+    }
+    /* Sub-role styling for progression within a company */
+    .timeline-subrole {
+      padding-bottom: 1.5rem;
+    }
+    .timeline-subrole:not(:last-child) {
+      border-bottom: 1px dashed var(--line);
+      margin-bottom: 1.5rem;
+    }
+    .timeline-subrole-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      margin-bottom: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .timeline-subrole-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+      }
+    }
+    .timeline-subrole-dates {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.9375rem;
+      color: var(--ink-muted);
+      white-space: nowrap;
     }
     .timeline-dates {
       font-family: "Space Grotesk", sans-serif;
@@ -2252,47 +2347,174 @@
       font-weight: 450;
     }
 
-    /* Certifications & Awards Grid */
-    .profile-creds-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+    /* Minimalist Awards & Industry Recognition List (Non-card layout) */
+    .awards-simple-list {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px dashed var(--line);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
-    @media (min-width: 768px) {
-      .profile-creds-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    .cred-item-card {
-      padding: 1.75rem;
-      border: 1px dashed var(--line);
-      background: var(--surface-grey);
-      border-radius: 2px;
+    .award-simple-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px dashed var(--line);
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      transition: background-color 0.2s ease;
     }
-    .cred-year {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1rem;
-      color: var(--ink-muted);
+    .award-top-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
     }
-    .cred-title {
+    @media (min-width: 640px) {
+      .award-top-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+      }
+    }
+    .award-title-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 0.65rem;
+      min-width: 0;
+    }
+    .award-bullet {
+      color: #e5a93b;
+      font-size: 1.1rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .award-title {
       font-size: 1.125rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--ink);
+      line-height: 1.35;
+      margin: 0;
     }
-    .cred-issuer {
-      font-size: 0.75rem;
+    .award-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8125rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .award-org {
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .award-sep {
       color: var(--ink-faint);
     }
-    .cred-desc {
-      font-size: 0.875rem;
+    .award-year {
+      font-family: "Space Grotesk", sans-serif;
+      color: #e5a93b;
+      font-weight: 600;
+    }
+    .award-desc {
+      font-size: 0.9375rem;
       color: var(--ink-muted);
-      line-height: 1.5;
-      margin-top: 0.25rem;
+      line-height: 1.6;
+      margin: 0;
+      padding-left: 1.4rem;
+      max-width: 82ch;
+    }
+
+    /* Minimalist Certifications List: Name, Institute & Year */
+    .cert-simple-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      border-top: 1px dashed var(--line);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    @media (min-width: 900px) {
+      .cert-simple-list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3.5rem;
+      }
+    }
+    .cert-simple-item {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.15rem 0;
+      border-bottom: 1px dashed var(--line);
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+    }
+    .cert-simple-item:hover .cert-title {
+      color: var(--ink);
+    }
+    .cert-info {
+      display: flex;
+      align-items: baseline;
+      gap: 0.65rem;
+      min-width: 0;
+      flex: 1;
+    }
+    .cert-bullet {
+      color: var(--ink-faint);
+      font-size: 0.875rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .cert-title {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.4;
+      word-break: normal;
+      overflow-wrap: break-word;
+    }
+    .cert-meta {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.45rem;
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .cert-institute {
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+    .cert-sep {
+      color: var(--ink-faint);
+      opacity: 0.6;
+    }
+    .cert-year {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 500;
+      color: var(--ink-faint);
+    }
+    @media (max-width: 640px) {
+      .cert-simple-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+        padding: 0.95rem 0;
+      }
+      .cert-meta {
+        padding-left: 1.25rem;
+        font-size: 0.75rem;
+      }
     }
 
     /* Profile Contact & CTA Block (Theme Adaptive) */
@@ -5929,7 +6151,7 @@
       <div class="profile-timeline-list">
 
         <!-- Role 01: Astha IT -->
-        <article class="profile-timeline-item">
+        <article class="profile-timeline-item is-current">
           <div>
             <span class="timeline-dates">April 2025 – Present</span>
             <p class="timeline-company"><strong>Astha IT</strong>Dhaka, BD · Full Time</p>
@@ -5952,24 +6174,54 @@
           </div>
         </article>
 
-        <!-- Role 02: SSL Wireless -->
+        <!-- Role 02: SSL Wireless (Jan 2017 – April 2025) -->
         <article class="profile-timeline-item">
           <div>
-            <span class="timeline-dates">Jan 2022 – April 2025</span>
+            <span class="timeline-dates">Jan 2017 – April 2025</span>
             <p class="timeline-company"><strong>SSL Wireless</strong>Dhaka, BD · Full Time</p>
-            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">Assistant Team Lead</span>
+            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">8+ Years Growth</span>
           </div>
           <div>
-            <h3 class="timeline-role-title">UX Analyst Manager (Assistant Team Lead)</h3>
-            <ul class="timeline-highlights">
-              <li><strong>Managed &amp; mentored a team of 5+ UI/UX designers</strong>, providing guidance on best practices, UX audit, usability testing, and design methodologies.</li>
-              <li><strong>Defined UX strategy</strong> for <strong>SSLCOMMERZ</strong>, Bangladesh's No.1 <strong>payment gateway</strong>, ensuring alignment with business goals and user needs.</li>
-              <li><strong>Conduct data analysis</strong> to identify customer needs and market trends, driving <strong>data-driven</strong> product strategies.</li>
-              <li>Led UX efforts for <strong>fintech and SaaS products</strong>, focusing on <strong>research-driven</strong> UI decisions.</li>
-              <li>Optimized usability and user flows for <strong>SSLCOMMERZ</strong> payment systems, decrease churn rate by <strong>62.4% to 3.14%</strong> and revamp SSLCOMMERZ <strong>merchant onboarding systems</strong>.</li>
-              <li>Designer <strong>"eBuddy" HRM application</strong> supporting over <strong>350+</strong> office employees.</li>
-              <li><strong>Collaborated with developers</strong> to refine UI interactions and ensure perfect design implementation.</li>
-            </ul>
+            <!-- Subrole 1: UX Analyst Manager -->
+            <div class="timeline-subrole">
+              <div class="timeline-subrole-header">
+                <h3 class="timeline-role-title" style="margin-bottom: 0;">UX Analyst Manager (Assistant Team Lead)</h3>
+                <span class="timeline-subrole-dates">Jan 2022 – April 2025</span>
+              </div>
+              <ul class="timeline-highlights">
+                <li>Managed &amp; mentored a team of 5 UI/UX designers, providing guidance on best practices, UX audit, usability testing, and design methodologies.</li>
+                <li>Defined UX strategy for SSLCOMMERZ, Bangladesh's No.1 payment gateway, ensuring alignment with business goals and user needs. Reduced drop rate from 62.4% &rarr; 3.14%.</li>
+                <li>Collaborated with cross-functional teams (PMs, Engineers, Business Leaders) to establish UX workflows and improve user engagement and business goal.</li>
+              </ul>
+            </div>
+
+            <!-- Subrole 2: Senior UX Engineer -->
+            <div class="timeline-subrole">
+              <div class="timeline-subrole-header">
+                <h3 class="timeline-role-title" style="margin-bottom: 0;">Senior UX Engineer</h3>
+                <span class="timeline-subrole-dates">Jan 2021 – Dec 2022</span>
+              </div>
+              <ul class="timeline-highlights">
+                <li>Led UX efforts for fintech and SaaS products, focusing on research-driven UI decisions.</li>
+                <li>Optimized usability and user flows for SSLCOMMERZ payment systems and revamp SSLCOMMERZ merchant onboarding systems.</li>
+                <li>Designer &ldquo;eBuddy&rdquo; HRM application supporting over 350+ office employees.</li>
+                <li>Led the creation of a scalable design system, increasing efficiency by 30% and ensuring UI consistency across products.</li>
+              </ul>
+            </div>
+
+            <!-- Subrole 3: UX Engineer -->
+            <div class="timeline-subrole">
+              <div class="timeline-subrole-header">
+                <h3 class="timeline-role-title" style="margin-bottom: 0;">UX Engineer</h3>
+                <span class="timeline-subrole-dates">Jan 2017 – Dec 2020</span>
+              </div>
+              <ul class="timeline-highlights">
+                <li>Designed &lsquo;Fastpay&rsquo; (Kurdistan's No.1 MFS app), leading to 500K+ users and around 63% increase in onboarding completion rates (Kurdistan's, Jul 2019 – Sep 2019).</li>
+                <li>Conducted UX Audit following to Usability, WCAG accessibility guideline.</li>
+                <li>Revamping an iSMS portal, resulting in a 30% increase in user engagement.</li>
+              </ul>
+            </div>
+
             <div class="timeline-tags-row">
               <span class="timeline-tag">SSLCOMMERZ</span>
               <span class="timeline-tag">Payment Gateway</span>
@@ -5977,6 +6229,7 @@
               <span class="timeline-tag">UX Strategy</span>
               <span class="timeline-tag">eBuddy HRM</span>
               <span class="timeline-tag">Design Mentorship</span>
+              <span class="timeline-tag">FastPay MFS</span>
             </div>
           </div>
         </article>
@@ -6136,49 +6389,133 @@
           <h2 class="profile-section-title">Certifications &amp; Masteries</h2>
         </div>
         <p style="font-size: 0.875rem; color: var(--ink-muted); max-width: 42ch;">
-          Recognized specializations in systems architecture, human-computer interaction, and machine learning infrastructure.
+          Professional certifications in UX leadership, AI fluency, human-computer interaction, and product strategy.
         </p>
       </div>
 
-      <div class="profile-creds-grid">
+      <ul class="cert-simple-list">
 
-        <div class="cred-item-card">
-          <span class="cred-year">2024</span>
-          <h3 class="cred-title">Certified Systems Architect</h3>
-          <span class="cred-issuer">MIT Professional Education</span>
-          <p class="cred-desc">
-            Rigorous certification in distributed system design, computational complexity, fault tolerance, and high-throughput architectural patterns.
-          </p>
-        </div>
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">UX Design Leadership</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Uxcel</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </li>
 
-        <div class="cred-item-card">
-          <span class="cred-year">2023</span>
-          <h3 class="cred-title">Master Certified UX Practitioner</h3>
-          <span class="cred-issuer">Nielsen Norman Group (NN/g)</span>
-          <p class="cred-desc">
-            Highest credential level awarded in enterprise usability, quantitative heuristics, cognitive modeling, and human-computer interaction.
-          </p>
-        </div>
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">AI Fluency for creative work</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Claude Academy</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </li>
 
-        <div class="cred-item-card">
-          <span class="cred-year">2024</span>
-          <h3 class="cred-title">LLM Application Architecture &amp; AI UX</h3>
-          <span class="cred-issuer">DeepLearning.AI &amp; Stanford Online</span>
-          <p class="cred-desc">
-            Specialization in multi-agent orchestration, vector embeddings, streaming interfaces, and human-in-the-loop recovery models.
-          </p>
-        </div>
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">AI in UX/UI Design</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Uxcel</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </li>
 
-        <div class="cred-item-card">
-          <span class="cred-year">2022</span>
-          <h3 class="cred-title">Professional Cloud Developer</h3>
-          <span class="cred-issuer">Google Cloud Platform</span>
-          <p class="cred-desc">
-            Validated proficiency in deploying containerized micro-frontends, global CDNs, cloud functions, and low-latency API architectures.
-          </p>
-        </div>
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">AI Fluency for builders</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Claude Academy</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </li>
 
-      </div>
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">Human Computer Interaction</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">IxDF</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2023</span>
+          </div>
+        </li>
+
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">Information Architecture</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Uxcel</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2024</span>
+          </div>
+        </li>
+
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">User Experience Beginner’s Guide</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Uxcel</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2023</span>
+          </div>
+        </li>
+
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">Web Design for Usability</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">IxDF</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2023</span>
+          </div>
+        </li>
+
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">Product led Certification</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Uxcel</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </li>
+
+        <li class="cert-simple-item">
+          <div class="cert-info">
+            <span class="cert-bullet" aria-hidden="true">•</span>
+            <span class="cert-title">Agile Workshop</span>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-institute">Astha IT</span>
+            <span class="cert-sep" aria-hidden="true">–</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </li>
+
+      </ul>
     </section>
 
     <!-- Awards & Achievements Section -->
@@ -6192,49 +6529,81 @@
           <h2 class="profile-section-title">Awards &amp; Achievements</h2>
         </div>
         <p style="font-size: 0.875rem; color: var(--ink-muted); max-width: 42ch;">
-          International acclaim for excellence in digital craftsmanship, interface elegance, and systems innovation.
+          Recognitions for exceptional UX leadership, mentoring, innovation, and community contributions.
         </p>
       </div>
 
-      <div class="profile-creds-grid">
+      <ul class="awards-simple-list">
 
-        <div class="cred-item-card">
-          <span class="cred-year">2024</span>
-          <h3 class="cred-title">Red Dot Design Award: Best of the Best</h3>
-          <span class="cred-issuer">Red Dot International Jury</span>
-          <p class="cred-desc">
-            Awarded for pioneering interface architecture in generative AI video diffusion workflows, transforming complex model knobs into intuitive editorial canvas tools.
+        <li class="award-simple-item">
+          <div class="award-top-row">
+            <div class="award-title-wrap">
+              <span class="award-bullet" aria-hidden="true">•</span>
+              <h3 class="award-title">&ldquo;Standout Performer&rdquo;</h3>
+            </div>
+            <div class="award-meta">
+              <span class="award-org">Astha IT</span>
+              <span class="award-sep" aria-hidden="true">–</span>
+              <span class="award-year">2026</span>
+            </div>
+          </div>
+          <p class="award-desc">
+            Awarded with the title of &ldquo;Standout Performer&rdquo; at Astha IT in 2026, in recognition of exceptional skills, outstanding clients success rate and team collaboration.
           </p>
-        </div>
+        </li>
 
-        <div class="cred-item-card">
-          <span class="cred-year">2023</span>
-          <h3 class="cred-title">Awwwards Site of the Year Nominee &amp; Developer Award</h3>
-          <span class="cred-issuer">Awwwards International</span>
-          <p class="cred-desc">
-            Recognized for sub-millisecond interaction design, precision 60 FPS WebGL rendering, and zero-compromise accessible typography.
+        <li class="award-simple-item">
+          <div class="award-top-row">
+            <div class="award-title-wrap">
+              <span class="award-bullet" aria-hidden="true">•</span>
+              <h3 class="award-title">&ldquo;Mentoring Hero&rdquo;</h3>
+            </div>
+            <div class="award-meta">
+              <span class="award-org">SSL Wireless</span>
+              <span class="award-sep" aria-hidden="true">–</span>
+              <span class="award-year">2022</span>
+            </div>
+          </div>
+          <p class="award-desc">
+            Awarded &ldquo;Mentoring Hero&rdquo; at SSL Wireless in 2022, for exceptional mentoring and supportive to other teammates.
           </p>
-        </div>
+        </li>
 
-        <div class="cred-item-card">
-          <span class="cred-year">2023</span>
-          <h3 class="cred-title">FWA of the Day · AI Systems Visualization</h3>
-          <span class="cred-issuer">Favourite Website Awards (FWA)</span>
-          <p class="cred-desc">
-            Honored for innovative drag-and-drop autonomous agent swarms canvas with real-time state telemetry playback.
+        <li class="award-simple-item">
+          <div class="award-top-row">
+            <div class="award-title-wrap">
+              <span class="award-bullet" aria-hidden="true">•</span>
+              <h3 class="award-title">&ldquo;Glowing Star Performer&rdquo;</h3>
+            </div>
+            <div class="award-meta">
+              <span class="award-org">SSL Wireless</span>
+              <span class="award-sep" aria-hidden="true">–</span>
+              <span class="award-year">2019</span>
+            </div>
+          </div>
+          <p class="award-desc">
+            Recognized employee of the year for outstanding performance and Innovation at SSL Wireless in 2019.
           </p>
-        </div>
+        </li>
 
-        <div class="cred-item-card">
-          <span class="cred-year">2022</span>
-          <h3 class="cred-title">Fast Company Innovation by Design Honoree</h3>
-          <span class="cred-issuer">Fast Company</span>
-          <p class="cred-desc">
-            Selected for automated design tokens synchronization engine bridging Figma and React across 12 distributed enterprise engineering squads.
+        <li class="award-simple-item">
+          <div class="award-top-row">
+            <div class="award-title-wrap">
+              <span class="award-bullet" aria-hidden="true">•</span>
+              <h3 class="award-title">&ldquo;Google Developer Group Speaker&rdquo;</h3>
+            </div>
+            <div class="award-meta">
+              <span class="award-org">Google Developer Group</span>
+              <span class="award-sep" aria-hidden="true">–</span>
+              <span class="award-year">Speaker &amp; Facilitator</span>
+            </div>
+          </div>
+          <p class="award-desc">
+            Conducted UX workshops based on UX &amp; Design Thinking.
           </p>
-        </div>
+        </li>
 
-      </div>
+      </ul>
     </section>
 
     <!-- Profile CTA & Socials Block -->
