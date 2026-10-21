@@ -2107,98 +2107,126 @@
     }
 
     /* Career Timeline */
-    /* Career Timeline with Left Spine Line (matching timeline spine specification) */
+    /* Executive Career Record Architecture (Clean, highly readable for recruiters & clients) */
     .profile-timeline-list {
-      position: relative;
       display: flex;
       flex-direction: column;
-      gap: 2.5rem;
-      padding-left: 2.75rem;
-    }
-    @media (max-width: 640px) {
-      .profile-timeline-list {
-        padding-left: 2rem;
-      }
-    }
-    /* Vertical Continuous Spine Line */
-    .profile-timeline-list::before {
-      content: "";
-      position: absolute;
-      top: 2.35rem;
-      bottom: 2.35rem;
-      left: 10px;
-      width: 2px;
-      background: linear-gradient(
-        to bottom,
-        #e5a93b 0%,
-        #e5a93b 15%,
-        rgba(229, 169, 59, 0.45) 28%,
-        var(--line) 42%,
-        var(--line) 100%
-      );
-      z-index: 1;
-    }
-    @media (max-width: 640px) {
-      .profile-timeline-list::before {
-        left: 8px;
-      }
+      gap: 2rem;
+      padding-left: 0;
+      margin: 0;
+      width: 100%;
     }
     .profile-timeline-item {
-      position: relative;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1.25rem;
-      padding: 2rem;
+      gap: 1.5rem;
+      padding: 2.25rem;
       border: 1px dashed var(--line);
       background: var(--surface-grey);
-      border-radius: 2px;
-      transition: border-color 0.2s ease;
+      border-radius: 4px;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     }
     @media (min-width: 1024px) {
       .profile-timeline-item {
-        grid-template-columns: 240px 1fr;
-        gap: 3rem;
+        grid-template-columns: 280px 1fr;
+        gap: 3.5rem;
       }
     }
     .profile-timeline-item:hover {
       border-color: var(--ink);
+      background: var(--surface-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
     }
-    /* Timeline Node on Spine Line */
-    .profile-timeline-item::before {
-      content: "";
-      position: absolute;
-      left: calc(-2.75rem + 5px);
-      top: 2.35rem;
-      transform: translateY(-50%);
-      width: 12px;
-      height: 12px;
+    /* Present / Active Leadership Role */
+    .profile-timeline-item.is-current {
+      border-left: 3px solid #e5a93b;
+      background: linear-gradient(90deg, rgba(229, 169, 59, 0.04) 0%, var(--surface-grey) 140px);
+    }
+    .profile-timeline-item.is-current:hover {
+      background: linear-gradient(90deg, rgba(229, 169, 59, 0.07) 0%, var(--surface-light) 140px);
+    }
+    /* Active Position Tag for Recruiters */
+    .timeline-active-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #e5a93b;
+      margin-bottom: 0.65rem;
+    }
+    .timeline-active-tag .active-dot {
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      z-index: 2;
-      box-sizing: border-box;
-      transition: all 0.25s ease;
-    }
-    @media (max-width: 640px) {
-      .profile-timeline-item::before {
-        left: calc(-2rem + 3px);
-      }
-    }
-    /* First item (Present / Active Role): Glowing Amber Dot with Halo */
-    .profile-timeline-item:first-child::before,
-    .profile-timeline-item.is-current::before {
       background: #e5a93b;
-      border: none;
-      box-shadow: 0 0 0 5px rgba(229, 169, 59, 0.25), 0 0 14px rgba(229, 169, 59, 0.5);
+      box-shadow: 0 0 0 3px rgba(229, 169, 59, 0.25);
     }
-    /* Subsequent items: Outlined Ring Nodes */
-    .profile-timeline-item:not(:first-child)::before {
-      background: var(--bg);
-      border: 2px solid var(--ink-faint);
+    .timeline-dates {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 0.4rem;
+      display: block;
     }
-    .profile-timeline-item:not(:first-child):hover::before {
-      border-color: #e5a93b;
-      box-shadow: 0 0 0 4px rgba(229, 169, 59, 0.2);
+    .timeline-company {
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      line-height: 1.45;
     }
-    /* Sub-role styling for progression within a company */
+    .timeline-company strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.2rem;
+    }
+    .timeline-tenure-badge {
+      display: inline-block;
+      margin-top: 0.85rem;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.3rem 0.65rem;
+      border-radius: 2px;
+      background: var(--surface-light);
+      border: 1px solid var(--line);
+      color: var(--ink-muted);
+    }
+    .timeline-role-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.015em;
+      margin-bottom: 0.85rem;
+      line-height: 1.3;
+    }
+    /* Progression Banner for Multi-Year Tenures */
+    .career-progression-notice {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--ink);
+      padding: 0.45rem 0.85rem;
+      background: var(--surface-light);
+      border: 1px dashed var(--line);
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+    .career-progression-notice .progression-icon {
+      color: #e5a93b;
+      font-weight: 700;
+    }
+    /* Internal Sub-Roles (Promotions & Milestones) */
     .timeline-subrole {
       padding-bottom: 1.5rem;
     }
@@ -2217,48 +2245,21 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-        gap: 1rem;
+        gap: 1.5rem;
       }
+    }
+    .timeline-subrole-header .timeline-role-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0;
     }
     .timeline-subrole-dates {
       font-family: "Space Grotesk", sans-serif;
-      font-size: 0.9375rem;
+      font-size: 0.875rem;
+      font-weight: 500;
       color: var(--ink-muted);
       white-space: nowrap;
-    }
-    .timeline-dates {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.125rem;
-      color: var(--ink);
-      line-height: 1.2;
-    }
-    .timeline-company {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--ink-muted);
-      margin-top: 0.35rem;
-    }
-    .timeline-company strong {
-      display: block;
-      color: var(--ink);
-      font-size: 0.9375rem;
-      text-transform: none;
-      letter-spacing: -0.01em;
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-    }
-    .timeline-role-title {
-      font-size: 1.35rem;
-      font-weight: 500;
-      color: var(--ink);
-      margin-bottom: 0.75rem;
-    }
-    .timeline-desc {
-      font-size: 0.9375rem;
-      color: var(--ink-muted);
-      line-height: 1.65;
-      margin-bottom: 1.25rem;
     }
     .timeline-highlights {
       list-style: none;
@@ -2266,14 +2267,14 @@
       margin: 0 0 1.25rem;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.6rem;
     }
     .timeline-highlights li {
-      font-size: 0.875rem;
+      font-size: 0.9375rem;
       color: var(--ink-muted);
       position: relative;
-      padding-left: 1.25rem;
-      line-height: 1.5;
+      padding-left: 1.35rem;
+      line-height: 1.55;
     }
     .timeline-highlights li strong {
       color: var(--ink);
@@ -2283,7 +2284,8 @@
       content: "—";
       position: absolute;
       left: 0;
-      color: var(--ink-faint);
+      color: #e5a93b;
+      font-weight: 600;
     }
     .timeline-tags-row {
       display: flex;
@@ -6150,19 +6152,23 @@
 
       <div class="profile-timeline-list">
 
-        <!-- Role 01: Astha IT -->
+        <!-- Role 01: Astha IT (Present) -->
         <article class="profile-timeline-item is-current">
-          <div>
+          <div class="timeline-meta-col">
+            <div class="timeline-active-tag">
+              <span class="active-dot" aria-hidden="true"></span>
+              <span>Current Position</span>
+            </div>
             <span class="timeline-dates">April 2025 – Present</span>
             <p class="timeline-company"><strong>Astha IT</strong>Dhaka, BD · Full Time</p>
-            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">Team Lead</span>
+            <span class="timeline-tenure-badge">Lead / Team Lead</span>
           </div>
           <div>
             <h3 class="timeline-role-title">Lead UI UX Designer (Team Lead)</h3>
             <ul class="timeline-highlights">
-              <li>Played a key role in AI-driven and data-driven decision to convert complex AI &amp; complex workflows into clear, user-centered experiences.</li>
-              <li>Designed AI-driven enterprise platforms, improving user adoption and client satisfaction upto 20%.</li>
-              <li>Contributed to Payra Port automation by designing operational dashboards and workflow systems.</li>
+              <li>Played a key role in <strong>AI-driven and data-driven decisions</strong> to convert complex AI models &amp; workflows into clear, user-centered experiences.</li>
+              <li>Designed AI-driven enterprise platforms, improving user adoption and client satisfaction by <strong>up to 20%</strong>.</li>
+              <li>Contributed to <strong>Payra Port automation</strong> by designing operational dashboards and mission-critical workflow systems.</li>
             </ul>
             <div class="timeline-tags-row">
               <span class="timeline-tag">AI-Driven UX</span>
@@ -6176,49 +6182,54 @@
 
         <!-- Role 02: SSL Wireless (Jan 2017 – April 2025) -->
         <article class="profile-timeline-item">
-          <div>
+          <div class="timeline-meta-col">
             <span class="timeline-dates">Jan 2017 – April 2025</span>
             <p class="timeline-company"><strong>SSL Wireless</strong>Dhaka, BD · Full Time</p>
-            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">8+ Years Growth</span>
+            <span class="timeline-tenure-badge">8+ Years Tenure</span>
           </div>
           <div>
+            <div class="career-progression-notice">
+              <span class="progression-icon" aria-hidden="true">↗</span>
+              <span>8+ Years Growth · Promoted 2× from UX Engineer to Management</span>
+            </div>
+
             <!-- Subrole 1: UX Analyst Manager -->
             <div class="timeline-subrole">
               <div class="timeline-subrole-header">
-                <h3 class="timeline-role-title" style="margin-bottom: 0;">UX Analyst Manager (Assistant Team Lead)</h3>
+                <h3 class="timeline-role-title">UX Analyst Manager (Assistant Team Lead)</h3>
                 <span class="timeline-subrole-dates">Jan 2022 – April 2025</span>
               </div>
               <ul class="timeline-highlights">
-                <li>Managed &amp; mentored a team of 5 UI/UX designers, providing guidance on best practices, UX audit, usability testing, and design methodologies.</li>
-                <li>Defined UX strategy for SSLCOMMERZ, Bangladesh's No.1 payment gateway, ensuring alignment with business goals and user needs. Reduced drop rate from 62.4% &rarr; 3.14%.</li>
-                <li>Collaborated with cross-functional teams (PMs, Engineers, Business Leaders) to establish UX workflows and improve user engagement and business goal.</li>
+                <li>Managed &amp; mentored a team of <strong>5 UI/UX designers</strong>, providing guidance on best practices, UX audit, usability testing, and design methodologies.</li>
+                <li>Defined UX strategy for <strong>SSLCOMMERZ</strong>, Bangladesh's No.1 payment gateway, ensuring alignment with business goals and user needs. Reduced drop rate from <strong>62.4% &rarr; 3.14%</strong>.</li>
+                <li>Collaborated with cross-functional teams (PMs, Engineers, Business Leaders) to establish UX workflows and improve user engagement and business goals.</li>
               </ul>
             </div>
 
             <!-- Subrole 2: Senior UX Engineer -->
             <div class="timeline-subrole">
               <div class="timeline-subrole-header">
-                <h3 class="timeline-role-title" style="margin-bottom: 0;">Senior UX Engineer</h3>
+                <h3 class="timeline-role-title">Senior UX Engineer</h3>
                 <span class="timeline-subrole-dates">Jan 2021 – Dec 2022</span>
               </div>
               <ul class="timeline-highlights">
-                <li>Led UX efforts for fintech and SaaS products, focusing on research-driven UI decisions.</li>
-                <li>Optimized usability and user flows for SSLCOMMERZ payment systems and revamp SSLCOMMERZ merchant onboarding systems.</li>
-                <li>Designer &ldquo;eBuddy&rdquo; HRM application supporting over 350+ office employees.</li>
-                <li>Led the creation of a scalable design system, increasing efficiency by 30% and ensuring UI consistency across products.</li>
+                <li>Led UX efforts for <strong>fintech and SaaS products</strong>, focusing on research-driven UI decisions.</li>
+                <li>Optimized usability and user flows for SSLCOMMERZ payment systems and revamped SSLCOMMERZ merchant onboarding systems.</li>
+                <li>Designed <strong>&ldquo;eBuddy&rdquo; HRM application</strong> supporting over <strong>350+ office employees</strong>.</li>
+                <li>Led the creation of a scalable design system, <strong>increasing efficiency by 30%</strong> and ensuring UI consistency across products.</li>
               </ul>
             </div>
 
             <!-- Subrole 3: UX Engineer -->
             <div class="timeline-subrole">
               <div class="timeline-subrole-header">
-                <h3 class="timeline-role-title" style="margin-bottom: 0;">UX Engineer</h3>
+                <h3 class="timeline-role-title">UX Engineer</h3>
                 <span class="timeline-subrole-dates">Jan 2017 – Dec 2020</span>
               </div>
               <ul class="timeline-highlights">
-                <li>Designed &lsquo;Fastpay&rsquo; (Kurdistan's No.1 MFS app), leading to 500K+ users and around 63% increase in onboarding completion rates (Kurdistan's, Jul 2019 – Sep 2019).</li>
-                <li>Conducted UX Audit following to Usability, WCAG accessibility guideline.</li>
-                <li>Revamping an iSMS portal, resulting in a 30% increase in user engagement.</li>
+                <li>Designed <strong>&lsquo;Fastpay&rsquo;</strong> (Kurdistan's No.1 MFS app), leading to <strong>500K+ users</strong> and around <strong>63% increase in onboarding completion rates</strong> (Kurdistan's, Jul 2019 – Sep 2019).</li>
+                <li>Conducted UX Audits following <strong>Usability &amp; WCAG accessibility guidelines</strong>.</li>
+                <li>Revamped an <strong>iSMS portal</strong>, resulting in a <strong>30% increase in user engagement</strong>.</li>
               </ul>
             </div>
 
@@ -6228,25 +6239,26 @@
               <span class="timeline-tag">Fintech &amp; SaaS</span>
               <span class="timeline-tag">UX Strategy</span>
               <span class="timeline-tag">eBuddy HRM</span>
-              <span class="timeline-tag">Design Mentorship</span>
+              <span class="timeline-tag">Design Systems</span>
               <span class="timeline-tag">FastPay MFS</span>
+              <span class="timeline-tag">Mentorship</span>
             </div>
           </div>
         </article>
 
         <!-- Role 03: Next Generation Communication -->
         <article class="profile-timeline-item">
-          <div>
+          <div class="timeline-meta-col">
             <span class="timeline-dates">May 2019 – Sep 2019</span>
             <p class="timeline-company"><strong>Next Generation Communication</strong>Erbil, Iraq · (Business Visit – 5 Months)</p>
-            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">Fintech UX</span>
+            <span class="timeline-tenure-badge">Fintech Engagement</span>
           </div>
           <div>
             <h3 class="timeline-role-title">UX Engineer</h3>
             <ul class="timeline-highlights">
-              <li>Designed key UX flows for 'FastPay', Iraq's leading #1 mobile wallet.</li>
-              <li>Worked closely with regional stakeholders on fintech product experiences.</li>
-              <li>Contributed to improving usability in high-frequency transaction journeys</li>
+              <li>Designed key UX flows for <strong>&lsquo;FastPay&rsquo;</strong>, Iraq's leading #1 mobile wallet.</li>
+              <li>Worked closely on-site with regional stakeholders on fintech product experiences.</li>
+              <li>Contributed to improving usability and user retention in high-frequency transaction journeys.</li>
             </ul>
             <div class="timeline-tags-row">
               <span class="timeline-tag">FastPay Mobile Wallet</span>
@@ -6259,19 +6271,20 @@
 
         <!-- Role 04: Oxford Immune Algorithmics -->
         <article class="profile-timeline-item">
-          <div>
+          <div class="timeline-meta-col">
             <span class="timeline-dates">Jan 2021 – Mar 2022</span>
             <p class="timeline-company"><strong>Oxford Immune Algorithmics</strong>United Kingdom · Remote</p>
-            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">Healthcare AI</span>
+            <span class="timeline-tenure-badge">Healthcare AI</span>
           </div>
           <div>
             <h3 class="timeline-role-title">UI/UX Designer</h3>
             <ul class="timeline-highlights">
-              <li>Redesigned healthcare app “Algocyte”, that helped securing 2nd round of funding.</li>
-              <li>UX Audit following to Usability, GDPR consent, WCAG accessibility guideline.</li>
+              <li>Redesigned healthcare app <strong>&ldquo;Algocyte&rdquo;</strong>, which directly contributed to securing their <strong>2nd round of funding</strong>.</li>
+              <li>Conducted rigorous UX Audits adhering to <strong>Usability, GDPR consent, and WCAG accessibility guidelines</strong>.</li>
             </ul>
             <div class="timeline-tags-row">
               <span class="timeline-tag">Algocyte Healthcare</span>
+              <span class="timeline-tag">HealthTech AI</span>
               <span class="timeline-tag">UX Audit</span>
               <span class="timeline-tag">GDPR Consent</span>
               <span class="timeline-tag">WCAG Accessibility</span>
@@ -6282,16 +6295,16 @@
 
         <!-- Role 05: MCC Ltd. -->
         <article class="profile-timeline-item">
-          <div>
+          <div class="timeline-meta-col">
             <span class="timeline-dates">Jan 2015 – Dec 2016</span>
             <p class="timeline-company"><strong>MCC Ltd.</strong>Dhaka, BD · Full Time</p>
-            <span class="work-roi-pill" style="margin-top: 0.75rem; display: inline-block;">Software &amp; UX</span>
+            <span class="timeline-tenure-badge">Software &amp; UX</span>
           </div>
           <div>
             <h3 class="timeline-role-title">Software Designer and Developer</h3>
             <ul class="timeline-highlights">
-              <li>Designed <strong>'Ghurbo'</strong>, a trip-booking platform, improving travel booking efficiency.</li>
-              <li>Built SaaS-based <strong>HRM solutions</strong> used by <strong>140+</strong> office employees.</li>
+              <li>Designed <strong>&lsquo;Ghurbo&rsquo;</strong>, a trip-booking platform, significantly improving travel booking efficiency.</li>
+              <li>Built SaaS-based <strong>HRM solutions</strong> actively used by <strong>140+ office employees</strong>.</li>
             </ul>
             <div class="timeline-tags-row">
               <span class="timeline-tag">Ghurbo Travel Platform</span>
