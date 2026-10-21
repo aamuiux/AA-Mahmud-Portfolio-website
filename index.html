@@ -2138,32 +2138,35 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
     }
-    /* Present / Active Leadership Role */
+    /* Present / Active Leadership Role (High-contrast prominence without non-system accent colors) */
     .profile-timeline-item.is-current {
-      border-left: 3px solid #e5a93b;
-      background: linear-gradient(90deg, rgba(229, 169, 59, 0.04) 0%, var(--surface-grey) 140px);
+      border: 1px solid var(--ink);
+      border-left: 4px solid var(--ink);
+      background: var(--surface-grey);
     }
     .profile-timeline-item.is-current:hover {
-      background: linear-gradient(90deg, rgba(229, 169, 59, 0.07) 0%, var(--surface-light) 140px);
+      background: var(--surface-light);
+      border-color: var(--ink);
     }
-    /* Active Position Tag for Recruiters */
+    /* Active Position Tag for Recruiters (Using standard system status pulse) */
     .timeline-active-tag {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
       font-size: 0.75rem;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.09em;
-      color: #e5a93b;
+      letter-spacing: 0.1em;
+      color: var(--ink);
       margin-bottom: 0.65rem;
     }
     .timeline-active-tag .active-dot {
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: #e5a93b;
-      box-shadow: 0 0 0 3px rgba(229, 169, 59, 0.25);
+      background: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+      animation: pulseGreen 2s infinite;
     }
     .timeline-dates {
       font-family: "Space Grotesk", sans-serif;
@@ -2198,7 +2201,7 @@
       border-radius: 2px;
       background: var(--surface-light);
       border: 1px solid var(--line);
-      color: var(--ink-muted);
+      color: var(--ink);
     }
     .timeline-role-title {
       font-size: 1.35rem;
@@ -2214,16 +2217,16 @@
       align-items: center;
       gap: 0.5rem;
       font-size: 0.8125rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--ink);
       padding: 0.45rem 0.85rem;
       background: var(--surface-light);
-      border: 1px dashed var(--line);
+      border: 1px solid var(--line-strong);
       border-radius: 2px;
       margin-bottom: 1.5rem;
     }
     .career-progression-notice .progression-icon {
-      color: #e5a93b;
+      color: var(--ink);
       font-weight: 700;
     }
     /* Internal Sub-Roles (Promotions & Milestones) */
@@ -2284,8 +2287,8 @@
       content: "—";
       position: absolute;
       left: 0;
-      color: #e5a93b;
-      font-weight: 600;
+      color: var(--ink);
+      font-weight: 700;
     }
     .timeline-tags-row {
       display: flex;
@@ -2388,10 +2391,11 @@
       min-width: 0;
     }
     .award-bullet {
-      color: #e5a93b;
+      color: var(--ink);
       font-size: 1.1rem;
       line-height: 1;
       flex-shrink: 0;
+      font-weight: 700;
     }
     .award-title {
       font-size: 1.125rem;
@@ -2419,8 +2423,14 @@
     }
     .award-year {
       font-family: "Space Grotesk", sans-serif;
-      color: #e5a93b;
+      font-size: 0.8125rem;
       font-weight: 600;
+      color: var(--ink);
+      background: var(--surface-light);
+      border: 1px solid var(--line-strong);
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+      letter-spacing: 0.04em;
     }
     .award-desc {
       font-size: 0.9375rem;
@@ -6099,10 +6109,10 @@
         <div>
           <div class="profile-portrait-wrap ratio-box ratio-3-4">
             <img
-              src="/src/assets/images/aa-mahmud.jpg"
-              alt="AA Mahmud — Lead UI/UX Designer"
-              width="1368"
-              height="2048"
+              src="/assets/aistudio/abdullah-al-mahmud_f00732dd.jpg"
+              alt="Abdullah Al Mahmud — Lead UI/UX Designer"
+              width="438"
+              height="501"
               loading="lazy"
               referrerpolicy="no-referrer"
             />
