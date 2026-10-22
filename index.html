@@ -2138,15 +2138,14 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
     }
-    /* Present / Active Leadership Role (High-contrast prominence without non-system accent colors) */
+    /* Present / Active Leadership Role (Dashed white border as requested) */
     .profile-timeline-item.is-current {
-      border: 1px solid var(--ink);
-      border-left: 4px solid var(--ink);
+      border: 1px dashed #ffffff;
       background: var(--surface-grey);
     }
     .profile-timeline-item.is-current:hover {
       background: var(--surface-light);
-      border-color: var(--ink);
+      border-color: #ffffff;
     }
     /* Active Position Tag for Recruiters (Using standard system status pulse) */
     .timeline-active-tag {
@@ -4268,12 +4267,12 @@
 
     <!-- Center Block: Showcase Archetypes & Filters -->
     <div class="sidebar-center-block">
-      <!-- Archetype Filter Navigation Tabs (1: SaaS, 2: Dashboards, 3: Fintech & Banking, 4: Landing Pages, 5: App Design) -->
+      <!-- Archetype Filter Navigation Tabs (1: SaaS, 2: Dashboards, 3: Fintech & Banking, 4: E-Commerce, 5: App Design, 6: Health Care) -->
       <nav class="sidebar-archetype-nav" role="tablist" aria-label="Filter works by archetype">
         <button class="category-btn" data-filter="saas" role="tab" aria-selected="false">
           <span class="cat-indicator" aria-hidden="true"></span>
           <span class="cat-name">SaaS Platforms</span>
-          <span class="cat-count">5</span>
+          <span class="cat-count">7</span>
         </button>
         <button class="category-btn" data-filter="dashboard" role="tab" aria-selected="false">
           <span class="cat-indicator" aria-hidden="true"></span>
@@ -4285,15 +4284,20 @@
           <span class="cat-name">Fintech &amp; Banking</span>
           <span class="cat-count">5</span>
         </button>
-        <button class="category-btn" data-filter="landing-page" role="tab" aria-selected="false">
+        <button class="category-btn" data-filter="ecommerce" role="tab" aria-selected="false">
           <span class="cat-indicator" aria-hidden="true"></span>
-          <span class="cat-name">Landing Pages</span>
+          <span class="cat-name">E-Commerce</span>
           <span class="cat-count">2</span>
         </button>
         <button class="category-btn" data-filter="app-design" role="tab" aria-selected="false">
           <span class="cat-indicator" aria-hidden="true"></span>
           <span class="cat-name">App Design</span>
           <span class="cat-count">6</span>
+        </button>
+        <button class="category-btn" data-filter="healthcare" role="tab" aria-selected="false">
+          <span class="cat-indicator" aria-hidden="true"></span>
+          <span class="cat-name">Health Care</span>
+          <span class="cat-count">2</span>
         </button>
       </nav>
     </div>
@@ -4790,6 +4794,13 @@
               <p class="exhibition-desc">Next-gen enterprise asset tracking &amp; cross-border freight suite</p>
             </div>
           </li>
+          <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="1" data-stagger="80">
+            <span class="exhibition-num">14</span>
+            <div class="exhibition-content">
+              <span class="exhibition-name">BAT Bangladesh</span>
+              <p class="exhibition-desc">Peachtree enterprise finance performance &amp; field distribution cockpit</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -5256,42 +5267,92 @@
         </div>
       </article>
 
-      <!-- 04: OmniMetrics Executive Telemetry Cockpit (Dashboard) -->
-      <article class="showcase-stacked-item work-item" data-category="dashboard" data-title="OmniMetrics Telemetry Cockpit" data-client="OmniMetrics Cloud" data-year="2025" data-roi="Sub-32ms Latency" data-cat-label="Dashboard · Telemetry Analytics" data-challenge="Site Reliability Engineers suffered notification fatigue and browser tab freezes rendering millions of live log entries." data-solution="Implemented GPU-accelerated canvas rendering with intelligent cluster aggregation and one-click root cause triage." data-tech="React · D3.js · WebGL Shaders · TypeScript · Web Workers">
+      <!-- 06: Whiz Intelligent AI Advanced Insight Graph Technology (SaaS Platform) -->
+      <article class="showcase-stacked-item work-item" data-category="saas" data-title="Whiz Intelligent AI Advanced Insight Graph Technology" data-client="Whiz AI" data-year="2025" data-roi="+3.2x Workflow Velocity" data-cat-label="SaaS Platform · AI Workspace &amp; Knowledge Graph" data-challenge="Cross-functional enterprise teams struggled with disjointed generative AI tools, prompt chaos, and opaque knowledge silos across complex data graphs." data-solution="Architected an advanced insight graph technology and intelligent AI workspace uniting interactive node graph exploration, prompt-to-workflow automation, and multi-model intelligence." data-tech="React · TypeScript · WebSockets · Tailwind CSS · AI Knowledge Graph · WebGL · Node.js">
         <div class="showcase-figure-wrap">
           <div class="ratio-box">
-            <img src="/src/assets/images/executive_dashboard_1791627892579.jpg" alt="OmniMetrics Executive Telemetry Cockpit" loading="lazy" referrerpolicy="no-referrer" />
+            <img src="/src/assets/images/saas_workflow_ui_1791627882230.jpg" alt="Whiz Intelligent AI Advanced Insight Graph Technology — Knowledge Graph & Canvas" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
         <div class="showcase-caption-block">
           <div class="showcase-title-row">
             <div>
-              <h2 class="showcase-item-heading">OmniMetrics Telemetry Cockpit</h2>
-              <p class="work-medium">Real-Time High-Density Distributed Systems Cockpit</p>
+              <h2 class="showcase-item-heading">Whiz Intelligent AI Advanced Insight Graph Technology</h2>
+              <p class="work-medium">Advanced Insight Graph &amp; Collaborative AI Intelligence Platform</p>
             </div>
             <span class="showcase-item-year">2025</span>
           </div>
           <div class="showcase-tags-line">
             <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
-              <span class="work-roi-pill">Sub-32ms Latency</span>
-              <span class="work-roi-pill metric-success-pill">450k Events/s</span>
+              <span class="work-roi-pill">+3.2x Velocity</span>
+              <span class="work-roi-pill metric-success-pill">Insight Graph Canvas</span>
             </div>
             <div class="showcase-actions-group">
-              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for OmniMetrics Telemetry Cockpit">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Whiz Intelligent AI Advanced Insight Graph Technology">
                 <span>Case Study</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </button>
-              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for OmniMetrics Telemetry Cockpit">
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Whiz Intelligent AI Advanced Insight Graph Technology">
                 <span>Prototype</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </a>
               <div class="showcase-overflow-wrap">
-                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for OmniMetrics Telemetry Cockpit">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Whiz Intelligent AI Advanced Insight Graph Technology">
                   <span>More Links</span>
                   <span aria-hidden="true">▾</span>
                 </button>
                 <div class="showcase-overflow-dropdown" role="menu">
-                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for OmniMetrics Telemetry Cockpit">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Whiz Intelligent AI Advanced Insight Graph Technology">
+                    <span>View in Figma</span>
+                    <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://letswhiz.com/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit Whiz Platform">
+                    <span>Live Site</span>
+                    <span class="overflow-tag">Visit ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07: TalentX Enterprise Recruitment & HR Suite (SaaS Platform) -->
+      <article class="showcase-stacked-item work-item" data-category="saas" data-title="TalentX Enterprise Recruitment Suite" data-client="TalentX" data-year="2025" data-roi="62% Faster Time-to-Hire" data-cat-label="SaaS Platform · Enterprise Recruitment &amp; ATS" data-challenge="Recruiting teams and hiring managers were overwhelmed by candidate volume, opaque interview scoring, and delayed multi-stakeholder hiring decisions." data-solution="Architected an intuitive enterprise ATS and talent pipeline platform featuring automated candidate scoring, visual stage progression boards, and unified interviewer feedback rubrics." data-tech="React · TypeScript · Tailwind CSS · Enterprise ATS Pipeline · Real-Time Collaboration · Node.js">
+        <div class="showcase-figure-wrap">
+          <div class="ratio-box">
+            <img src="/src/assets/images/design_system_scale_1791101186365.jpg" alt="TalentX Enterprise Recruitment Suite — Pipeline & Candidate Scoring" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div class="showcase-caption-block">
+          <div class="showcase-title-row">
+            <div>
+              <h2 class="showcase-item-heading">TalentX Enterprise Recruitment Suite</h2>
+              <p class="work-medium">Next-Generation Talent Acquisition, Pipeline Tracking &amp; Interview Intelligence</p>
+            </div>
+            <span class="showcase-item-year">2025</span>
+          </div>
+          <div class="showcase-tags-line">
+            <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
+              <span class="work-roi-pill">62% Faster Hiring</span>
+              <span class="work-roi-pill metric-success-pill">Automated Scoring</span>
+            </div>
+            <div class="showcase-actions-group">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for TalentX Enterprise Recruitment Suite">
+                <span>Case Study</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </button>
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for TalentX Enterprise Recruitment Suite">
+                <span>Prototype</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </a>
+              <div class="showcase-overflow-wrap">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for TalentX Enterprise Recruitment Suite">
+                  <span>More Links</span>
+                  <span aria-hidden="true">▾</span>
+                </button>
+                <div class="showcase-overflow-dropdown" role="menu">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for TalentX Enterprise Recruitment Suite">
                     <span>View in Figma</span>
                     <span class="overflow-tag">Source ↗</span>
                   </a>
@@ -5302,42 +5363,94 @@
         </div>
       </article>
 
-      <!-- 05: FinPulse Algorithmic Growth Cockpit (Dashboard) -->
-      <article class="showcase-stacked-item work-item" data-category="dashboard" data-title="FinPulse Algorithmic Growth Cockpit" data-client="FinPulse Capital" data-year="2024" data-roi="+84% ARR Visibility" data-cat-label="Dashboard · Financial Intelligence" data-challenge="Portfolio managers relied on 6 disconnected spreadsheets with delayed reconciliations and high manual error risks." data-solution="Architected a unified real-time execution cockpit with algorithmic scenario stress-testing and instant risk calculations." data-tech="Next.js · Highcharts · WebSocket · Tailwind CSS">
+      <!-- eBuddy Enterprise HRM & Task Performance Cockpit (Dashboard) -->
+      <article class="showcase-stacked-item work-item" data-category="dashboard" data-title="eBuddy Enterprise HRM &amp; Task Cockpit" data-client="SSL Wireless" data-year="2024" data-roi="350+ Office Workforce" data-cat-label="Dashboard · Enterprise HRM &amp; Workforce Performance" data-challenge="Supervisors and operations leadership managing 350+ employees faced fragmented sprint milestone reporting, delayed task review handoffs, and disjointed biometric punch-in / leave approval workflows." data-solution="Architected the comprehensive eBuddy Supervisor Cockpit uniting daily task statuses (WIP, Due, Review), sprint milestone tracking, real-time biometric attendance (Punch In/Out), and granular departmental leave telemetry." data-tech="React · TypeScript · Tailwind CSS · Biometric Auth API · Real-Time Task State Machines · Enterprise HRM">
         <div class="showcase-figure-wrap">
-          <div class="ratio-box">
-            <img src="/src/assets/images/fintech_analytics_ux_1791101201101.jpg" alt="FinPulse Algorithmic Growth Cockpit" loading="lazy" referrerpolicy="no-referrer" />
+          <div class="ratio-box" style="aspect-ratio: 16 / 11;">
+            <img src="/public/assets/aistudio/02.1_Supervisor_4a6ac342.jpg" alt="eBuddy Enterprise HRM &amp; Task Performance Dashboard — SSL Wireless" style="object-position: top;" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
         <div class="showcase-caption-block">
           <div class="showcase-title-row">
             <div>
-              <h2 class="showcase-item-heading">FinPulse Algorithmic Cockpit</h2>
-              <p class="work-medium">Institutional Multi-Asset Portfolio &amp; Yield Terminal</p>
+              <h2 class="showcase-item-heading">eBuddy Enterprise HRM &amp; Task Cockpit</h2>
+              <p class="work-medium">Milestone Reviews, Biometric Attendance, Task Velocity &amp; Team Performance Telemetry</p>
             </div>
             <span class="showcase-item-year">2024</span>
           </div>
           <div class="showcase-tags-line">
             <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
-              <span class="work-roi-pill">+84% ARR Visibility</span>
-              <span class="work-roi-pill metric-success-pill">-60% Rebalance Time</span>
+              <span class="work-roi-pill">350+ Employees</span>
+              <span class="work-roi-pill metric-success-pill">Biometric Punch-In</span>
+              <span class="work-roi-pill">Task Sprint Reviews</span>
             </div>
             <div class="showcase-actions-group">
-              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for FinPulse Algorithmic Growth Cockpit">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for eBuddy Enterprise HRM &amp; Task Cockpit">
                 <span>Case Study</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </button>
-              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for FinPulse Algorithmic Growth Cockpit">
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for eBuddy Enterprise HRM &amp; Task Cockpit">
                 <span>Prototype</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </a>
               <div class="showcase-overflow-wrap">
-                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for FinPulse Algorithmic Growth Cockpit">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for eBuddy Enterprise HRM &amp; Task Cockpit">
                   <span>More Links</span>
                   <span aria-hidden="true">▾</span>
                 </button>
                 <div class="showcase-overflow-dropdown" role="menu">
-                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for FinPulse Algorithmic Growth Cockpit">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for eBuddy Enterprise HRM &amp; Task Cockpit">
+                    <span>View in Figma</span>
+                    <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://sslwireless.com/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit SSL Wireless Corporate Portal">
+                    <span>Client Portal</span>
+                    <span class="overflow-tag">Visit ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- AI Mail Autonomous Inbox & Telemetry Cockpit (Dashboard) -->
+      <article class="showcase-stacked-item work-item" data-category="dashboard" data-title="AI Mail Autonomous Inbox &amp; Telemetry Cockpit" data-client="Catalog / SSL Wireless" data-year="2025" data-roi="79% AI Effectiveness" data-cat-label="Dashboard · AI Autonomous Triage &amp; Response Telemetry" data-challenge="Enterprise knowledge workers and client service leads suffered from email inbox paralysis, high unanswered response backlogs, and lack of visibility into autonomous AI assistant drafting velocity." data-solution="Engineered an executive email intelligence dashboard providing real-time response volume distribution (75% AI vs 15% Human), priority follow-up triage queues, sub-12m average response times, and weekly email workload analytics." data-tech="React · TypeScript · D3.js Charts · AI Triage Engine · WebSocket · Tailwind CSS">
+        <div class="showcase-figure-wrap">
+          <div class="ratio-box" style="aspect-ratio: 16 / 11;">
+            <img src="/public/assets/aistudio/AI_Mail_-_Dashboard_431344ea.jpg" alt="AI Mail Autonomous Inbox &amp; Response Telemetry Dashboard" style="object-position: top;" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div class="showcase-caption-block">
+          <div class="showcase-title-row">
+            <div>
+              <h2 class="showcase-item-heading">AI Mail Autonomous Inbox &amp; Telemetry Cockpit</h2>
+              <p class="work-medium">Autonomous Email Triage, 79% AI Effectiveness &amp; Real-Time Response Velocity Dashboard</p>
+            </div>
+            <span class="showcase-item-year">2025</span>
+          </div>
+          <div class="showcase-tags-line">
+            <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
+              <span class="work-roi-pill">79% AI Effectiveness</span>
+              <span class="work-roi-pill metric-success-pill">12m 3s Response</span>
+              <span class="work-roi-pill">75% AI Volume</span>
+            </div>
+            <div class="showcase-actions-group">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for AI Mail Autonomous Inbox &amp; Telemetry Cockpit">
+                <span>Case Study</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </button>
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for AI Mail Autonomous Inbox &amp; Telemetry Cockpit">
+                <span>Prototype</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </a>
+              <div class="showcase-overflow-wrap">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for AI Mail Autonomous Inbox &amp; Telemetry Cockpit">
+                  <span>More Links</span>
+                  <span aria-hidden="true">▾</span>
+                </button>
+                <div class="showcase-overflow-dropdown" role="menu">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for AI Mail Autonomous Inbox &amp; Telemetry Cockpit">
                     <span>View in Figma</span>
                     <span class="overflow-tag">Source ↗</span>
                   </a>
@@ -5348,44 +5461,49 @@
         </div>
       </article>
 
-      <!-- 06: Synapse Autonomous Agent Telemetry (Dashboard) -->
-      <article class="showcase-stacked-item work-item" data-category="dashboard" data-title="Synapse Autonomous Agent Telemetry" data-client="Synapse Intelligence" data-year="2025" data-roi="99.98% Agent Uptime" data-cat-label="Dashboard · AI Systems Monitoring" data-challenge="Blind spots in multi-agent autonomous loops leading to runaway API token costs and unexpected reasoning loops." data-solution="Built live graph visualizer with token circuit breakers, loop detection heatmaps, and latency distribution charts." data-tech="React · WebGL · D3.js · Tailwind · Server-Sent Events">
+      <!-- BAT Peachtree Enterprise Finance & Field Operations Cockpit (Dashboard) -->
+      <article class="showcase-stacked-item work-item" data-category="dashboard" data-title="BAT Peachtree Finance &amp; Operations Cockpit" data-client="British American Tobacco (BAT)" data-year="2025" data-roi="৳73.8 Cr. Monthly Velocity" data-cat-label="Dashboard · Enterprise Finance &amp; Field Operations" data-challenge="British American Tobacco (BAT) leadership required unified real-time visibility across nationwide field distribution, brand-tier sales margins, daily agent commissions, and multi-district logistics expense telemetry spanning 1,930+ retail outlets." data-solution="Architected the BAT Peachtree executive finance and distribution performance cockpit, integrating real-time sales volume KPIs, brand category yield distributions (Premium, Aspirational, VFM), field force tracking, and regional expense telemetry." data-tech="React · TypeScript · D3.js · Data Visualization · High-Density Financial Analytics · Tailwind CSS · Enterprise ERP">
         <div class="showcase-figure-wrap">
-          <div class="ratio-box">
-            <img src="/src/assets/images/ai_agent_graph_ux_1791101172201.jpg" alt="Synapse Autonomous Agent Telemetry Cockpit" loading="lazy" referrerpolicy="no-referrer" />
+          <div class="ratio-box" style="aspect-ratio: 16 / 10;">
+            <img src="/public/assets/aistudio/BAT_Peachtree_285bf916.jpg" alt="BAT Peachtree Finance Performance &amp; Operations Cockpit — British American Tobacco" style="object-position: top;" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
         <div class="showcase-caption-block">
           <div class="showcase-title-row">
             <div>
-              <h2 class="showcase-item-heading">Synapse Agent Telemetry</h2>
-              <p class="work-medium">Distributed Agent Swarm Performance Monitor</p>
+              <h2 class="showcase-item-heading">BAT Peachtree Finance &amp; Operations Cockpit</h2>
+              <p class="work-medium">Enterprise Finance Performance, Nationwide Field Distribution &amp; Regional Expense Telemetry</p>
             </div>
             <span class="showcase-item-year">2025</span>
           </div>
           <div class="showcase-tags-line">
             <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
-              <span class="work-roi-pill">99.98% Uptime</span>
-              <span class="work-roi-pill metric-success-pill">Cost Guardrails</span>
+              <span class="work-roi-pill">৳73.8 Cr. Velocity</span>
+              <span class="work-roi-pill metric-success-pill">1,930+ Outlets</span>
+              <span class="work-roi-pill">21.3% Monthly ROI</span>
             </div>
             <div class="showcase-actions-group">
-              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Synapse Autonomous Agent Telemetry">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for BAT Peachtree Finance &amp; Operations Cockpit">
                 <span>Case Study</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </button>
-              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Synapse Autonomous Agent Telemetry">
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for BAT Peachtree Finance &amp; Operations Cockpit">
                 <span>Prototype</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </a>
               <div class="showcase-overflow-wrap">
-                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Synapse Autonomous Agent Telemetry">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for BAT Peachtree Finance &amp; Operations Cockpit">
                   <span>More Links</span>
                   <span aria-hidden="true">▾</span>
                 </button>
                 <div class="showcase-overflow-dropdown" role="menu">
-                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Synapse Autonomous Agent Telemetry">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for BAT Peachtree Finance &amp; Operations Cockpit">
                     <span>View in Figma</span>
                     <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://www.batbangladesh.com/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit British American Tobacco Corporate Platform">
+                    <span>Client Portal</span>
+                    <span class="overflow-tag">Visit ↗</span>
                   </a>
                 </div>
               </div>
@@ -5394,44 +5512,48 @@
         </div>
       </article>
 
-      <!-- 07: Lumina Generative Studio Web Presence (Landing Page) -->
-      <article class="showcase-stacked-item work-item" data-category="landing-page" data-title="Lumina Generative Studio Web Presence" data-client="Lumina Creative Studio" data-year="2025" data-roi="+128% Conversion" data-cat-label="Landing Page · Editorial Digital Presence" data-challenge="Conventional SaaS marketing pages failed to convey the premium craftsmanship and computing depth of generative video." data-solution="Crafted a sensory narrative web experience featuring seamless video embeds, physics-based scroll, and minimal typographic clarity." data-tech="Three.js · GSAP · Lenis · Next.js · CSS Variables">
+      <!-- 07: Apex4U Omnichannel Footwear & Lifestyle Store (E-Commerce) -->
+      <article class="showcase-stacked-item work-item" data-category="ecommerce" data-title="Apex4U Omnichannel Footwear &amp; Lifestyle Store" data-client="Apex Footwear Ltd." data-year="2025" data-roi="+38% Mobile Conversion" data-cat-label="E-Commerce · Omnichannel Footwear &amp; Fashion" data-challenge="Translating Bangladesh&#39;s leading footwear brand into a responsive, high-converting digital storefront with synchronized retail inventory and friction-free mobile checkout." data-solution="Architected high-speed responsive storefront featuring instant faceted SKU filtering, interactive footwear previews, and streamlined checkout integrating SSLCOMMERZ &amp; MFS." data-tech="Next.js · TypeScript · Tailwind CSS · Headless Commerce · Algolia · SSLCOMMERZ">
         <div class="showcase-figure-wrap">
           <div class="ratio-box">
-            <img src="/src/assets/images/landing_page_ui_1791627904873.jpg" alt="Lumina Generative Studio Web Presence" loading="lazy" referrerpolicy="no-referrer" />
+            <img src="/src/assets/images/landing_page_ui_1791627904873.jpg" alt="Apex4U Omnichannel Footwear &amp; Lifestyle Store" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
         <div class="showcase-caption-block">
           <div class="showcase-title-row">
             <div>
-              <h2 class="showcase-item-heading">Lumina Generative Studio</h2>
-              <p class="work-medium">High-Impact Editorial SaaS Web Experience</p>
+              <h2 class="showcase-item-heading">Apex4U Omnichannel Footwear &amp; Lifestyle</h2>
+              <p class="work-medium">High-Conversion Digital Retail Storefront &amp; Loyalty Ecosystem</p>
             </div>
             <span class="showcase-item-year">2025</span>
           </div>
           <div class="showcase-tags-line">
             <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
-              <span class="work-roi-pill">+128% Conversion</span>
-              <span class="work-roi-pill metric-success-pill">60 FPS WebGL</span>
+              <span class="work-roi-pill">+38% Conversion</span>
+              <span class="work-roi-pill metric-success-pill">Instant Checkout</span>
             </div>
             <div class="showcase-actions-group">
-              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Lumina Generative Studio Web Presence">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Apex4U Omnichannel Store">
                 <span>Case Study</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </button>
-              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Lumina Generative Studio Web Presence">
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Apex4U Omnichannel Store">
                 <span>Prototype</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </a>
               <div class="showcase-overflow-wrap">
-                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Lumina Generative Studio Web Presence">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Apex4U Omnichannel Store">
                   <span>More Links</span>
                   <span aria-hidden="true">▾</span>
                 </button>
                 <div class="showcase-overflow-dropdown" role="menu">
-                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Lumina Generative Studio Web Presence">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Apex4U Omnichannel Store">
                     <span>View in Figma</span>
                     <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://apex4u.com/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit Apex4U Live Store">
+                    <span>Live Site</span>
+                    <span class="overflow-tag">Visit ↗</span>
                   </a>
                 </div>
               </div>
@@ -5440,44 +5562,48 @@
         </div>
       </article>
 
-      <!-- 08: Aurora Intelligence Cloud Launchpad (Landing Page) -->
-      <article class="showcase-stacked-item work-item" data-category="landing-page" data-title="Aurora Intelligence Cloud Launchpad" data-client="Aurora AI Labs" data-year="2025" data-roi="+45k Waitlist in 72h" data-cat-label="Landing Page · Product Launch" data-challenge="Attracting skeptical enterprise developers without leaning into generic AI buzzwords or hollow marketing jargon." data-solution="Led with functional sandbox interactivity, verifiable performance benchmarks, and transparent API documentation." data-tech="Vite · Tailwind CSS · Lucide · Framer Motion · WebGL">
+      <!-- 08: Transcom Digital Consumer Electronics & Appliance Megastore (E-Commerce) -->
+      <article class="showcase-stacked-item work-item" data-category="ecommerce" data-title="Transcom Digital Electronics &amp; Appliance Megastore" data-client="Transcom Digital" data-year="2025" data-roi="150k+ Monthly Orders" data-cat-label="E-Commerce · Consumer Electronics &amp; Appliances" data-challenge="Fragmented electronics catalog across premium global brands (Samsung, Sony, Whirlpool, Philips) with complex bank EMI financing schemes and nationwide logistics." data-solution="Engineered an enterprise e-commerce platform featuring automated 0% EMI calculators, official brand boutique storefronts, and real-time delivery slot dispatch tracking." data-tech="React · TypeScript · Tailwind CSS · Multi-Brand Catalog · EMI Gateway · Logistics APIs">
         <div class="showcase-figure-wrap">
           <div class="ratio-box">
-            <img src="/src/assets/images/editorial_landing_mockup_1791740148187.jpg" alt="Aurora Intelligence Cloud Launchpad" loading="lazy" referrerpolicy="no-referrer" />
+            <img src="/src/assets/images/editorial_landing_mockup_1791740148187.jpg" alt="Transcom Digital Electronics &amp; Appliance Megastore" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
         <div class="showcase-caption-block">
           <div class="showcase-title-row">
             <div>
-              <h2 class="showcase-item-heading">Aurora Intelligence Cloud</h2>
-              <p class="work-medium">Developer-First Enterprise Launch Experience</p>
+              <h2 class="showcase-item-heading">Transcom Digital Electronics Megastore</h2>
+              <p class="work-medium">Enterprise Consumer Electronics, EMI Installments &amp; Retail Logistics</p>
             </div>
             <span class="showcase-item-year">2025</span>
           </div>
           <div class="showcase-tags-line">
             <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
-              <span class="work-roi-pill">+45k Waitlist</span>
-              <span class="work-roi-pill metric-success-pill">Sub-1s LCP</span>
+              <span class="work-roi-pill">150k+ Orders</span>
+              <span class="work-roi-pill metric-success-pill">0% EMI Engine</span>
             </div>
             <div class="showcase-actions-group">
-              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Aurora Intelligence Cloud Launchpad">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Transcom Digital Electronics Megastore">
                 <span>Case Study</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </button>
-              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Aurora Intelligence Cloud Launchpad">
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Transcom Digital Electronics Megastore">
                 <span>Prototype</span>
                 <span class="arrow-diag" aria-hidden="true">↗</span>
               </a>
               <div class="showcase-overflow-wrap">
-                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Aurora Intelligence Cloud Launchpad">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Transcom Digital Electronics Megastore">
                   <span>More Links</span>
                   <span aria-hidden="true">▾</span>
                 </button>
                 <div class="showcase-overflow-dropdown" role="menu">
-                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Aurora Intelligence Cloud Launchpad">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Transcom Digital Electronics Megastore">
                     <span>View in Figma</span>
                     <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://transcomdigital.com/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit Transcom Digital Official Store">
+                    <span>Live Site</span>
+                    <span class="overflow-tag">Visit ↗</span>
                   </a>
                 </div>
               </div>
@@ -6026,6 +6152,106 @@
                     <span class="overflow-tag">Source ↗</span>
                   </a>
                   <a href="https://thepremierbankplc.com/corporate-banking/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit The Premier Bank Corporate Banking">
+                    <span>Live Site</span>
+                    <span class="overflow-tag">Visit ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 20: Algocyte AI Biomarker & Immune Telemetry Platform (Health Care) -->
+      <article class="showcase-stacked-item work-item" data-category="healthcare" data-title="Algocyte AI Biomarker &amp; Immune Telemetry" data-client="Oxford Immune Algorithmics / Algocyte AI" data-year="2025" data-roi="Sub-Second Anomaly Triage" data-cat-label="Health Care · Precision AI &amp; Immune Telemetry" data-challenge="Complex cellular hematology and biomarker telemetry data was difficult for clinical oncologists to interpret rapidly during time-critical patient evaluations." data-solution="Engineered high-density, real-time hematology telemetry visualization with predictive immune-system anomaly alerts and longitudinal patient biomarker graphs." data-tech="React · TypeScript · WebGL Canvas · D3.js · HIPAA Telemetry · Python Analytics">
+        <div class="showcase-figure-wrap">
+          <div class="ratio-box">
+            <img src="/src/assets/images/mobile_ai_companion_1791740159036.jpg" alt="Algocyte AI Biomarker &amp; Immune Telemetry — Real-Time Clinical Anomaly Alerts" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div class="showcase-caption-block">
+          <div class="showcase-title-row">
+            <div>
+              <h2 class="showcase-item-heading">Algocyte AI Biomarker &amp; Immune Telemetry</h2>
+              <p class="work-medium">Precision Hematology Intelligence &amp; Real-Time Immune Health Cockpit</p>
+            </div>
+            <span class="showcase-item-year">2025</span>
+          </div>
+          <div class="showcase-tags-line">
+            <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
+              <span class="work-roi-pill">HIPAA Compliant</span>
+              <span class="work-roi-pill metric-success-pill">Predictive Alerts</span>
+            </div>
+            <div class="showcase-actions-group">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Algocyte AI Biomarker Platform">
+                <span>Case Study</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </button>
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Algocyte AI Biomarker Platform">
+                <span>Prototype</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </a>
+              <div class="showcase-overflow-wrap">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Algocyte AI Biomarker Platform">
+                  <span>More Links</span>
+                  <span aria-hidden="true">▾</span>
+                </button>
+                <div class="showcase-overflow-dropdown" role="menu">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Algocyte AI Biomarker Platform">
+                    <span>View in Figma</span>
+                    <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://algocyte.ai/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit Algocyte AI Live Site">
+                    <span>Live Site</span>
+                    <span class="overflow-tag">Visit ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 21: Gain Health Digital Therapeutics & Clinical Care Platform (Health Care) -->
+      <article class="showcase-stacked-item work-item" data-category="healthcare" data-title="Gain Health Digital Therapeutics &amp; Care Platform" data-client="Gain Health" data-year="2025" data-roi="+92% Treatment Adherence" data-cat-label="Health Care · Digital Therapeutics &amp; Clinical Portals" data-challenge="Patients with chronic conditions lacked unified continuity of care between physician consultations, remote biometric tracking, and prescribed therapy adherence." data-solution="Designed a comprehensive clinical digital therapeutics dashboard and patient care companion uniting asynchronous doctor messaging with biometric adherence tracking." data-tech="React · TypeScript · WebRTC Telehealth · Fast-FHIR API · Tailored Care Protocols · Secure Telehealth">
+        <div class="showcase-figure-wrap">
+          <div class="ratio-box">
+            <img src="/src/assets/images/othership_clean_ui_1792223295350.jpg" alt="Gain Health Digital Therapeutics &amp; Clinical Care Platform" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div class="showcase-caption-block">
+          <div class="showcase-title-row">
+            <div>
+              <h2 class="showcase-item-heading">Gain Health Digital Therapeutics &amp; Care</h2>
+              <p class="work-medium">Clinical Patient Companion, Biometric Adherence &amp; Remote Physician Consultations</p>
+            </div>
+            <span class="showcase-item-year">2025</span>
+          </div>
+          <div class="showcase-tags-line">
+            <div style="display:flex; align-items:center; gap: 0.65rem; flex-wrap:wrap;">
+              <span class="work-roi-pill">+92% Adherence</span>
+              <span class="work-roi-pill metric-success-pill">Remote Clinical Care</span>
+            </div>
+            <div class="showcase-actions-group">
+              <button class="quick-brief-btn" type="button" aria-label="Open Case Study for Gain Health Digital Therapeutics">
+                <span>Case Study</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </button>
+              <a href="https://www.figma.com/proto/preview" target="_blank" rel="noreferrer noopener" class="showcase-action-link action-proto" aria-label="View Prototype for Gain Health Digital Therapeutics">
+                <span>Prototype</span>
+                <span class="arrow-diag" aria-hidden="true">↗</span>
+              </a>
+              <div class="showcase-overflow-wrap">
+                <button class="showcase-overflow-btn" type="button" aria-expanded="false" aria-label="More actions for Gain Health Digital Therapeutics">
+                  <span>More Links</span>
+                  <span aria-hidden="true">▾</span>
+                </button>
+                <div class="showcase-overflow-dropdown" role="menu">
+                  <a href="https://www.figma.com/@aam_uiux" target="_blank" rel="noreferrer noopener" class="overflow-item-link" aria-label="View in Figma for Gain Health Digital Therapeutics">
+                    <span>View in Figma</span>
+                    <span class="overflow-tag">Source ↗</span>
+                  </a>
+                  <a href="https://www.gainhealth.org/" target="_blank" rel="noreferrer noopener" class="overflow-item-link live-link" aria-label="Visit Gain Health Official Portal">
                     <span>Live Site</span>
                     <span class="overflow-tag">Visit ↗</span>
                   </a>
@@ -7184,20 +7410,20 @@
       'all': {
         title: 'All Architecture Archetypes',
         kicker: 'Showcase Feed · Flagship Works',
-        count: '21 Verified Projects',
-        desc: 'Curated collection of 21 enterprise SaaS platforms, high-throughput cockpits, fintech banking suites, editorial landing pages, and native mobile apps engineered for ROI.'
+        count: '25 Verified Projects',
+        desc: 'Curated collection of 25 enterprise SaaS platforms, high-throughput cockpits, fintech banking suites, e-commerce stores, native mobile apps, and health care platforms engineered for ROI.'
       },
       'saas': {
         title: 'SaaS Platforms',
         kicker: 'Archetype 01 · B2B Platforms',
-        count: '5 Flagship Platforms',
-        desc: 'Enterprise multi-tenant platforms, intelligent document AI, hybrid workplace hubs, CPG trade portals, and automated process orchestration suites designed for operational velocity.'
+        count: '7 Flagship Platforms',
+        desc: 'Enterprise multi-tenant platforms, AI knowledge workspaces, intelligent document AI, hybrid workplace hubs, CPG trade portals, and automated process orchestration suites designed for operational velocity.'
       },
       'dashboard': {
         title: 'Dashboards & Cockpits',
         kicker: 'Archetype 02 · Observability & Analytics',
         count: '3 Executive Cockpits',
-        desc: 'Low-latency observability terminals, algorithmic trading cockpits, and distributed systems monitoring handling real-time data streaming.'
+        desc: 'BAT Peachtree enterprise finance distribution, eBuddy HRM supervisor task performance, and AI Mail autonomous inbox intelligence cockpits.'
       },
       'fintech': {
         title: 'Fintech, Banking & MFS',
@@ -7205,17 +7431,23 @@
         count: '5 Verified Platforms',
         desc: 'National payment gateway aggregators, state internet banking portals, merchant KYC onboarding flows, cross-border digital wallets, and corporate cash management suites.'
       },
-      'landing-page': {
-        title: 'Editorial Landing Pages',
-        kicker: 'Archetype 04 · High-Conversion Digital Presence',
-        count: '2 Flagship Experiences',
-        desc: 'Tactile editorial web experiences and launchpads combining WebGL micro-interactions, dark-mode elegance, and high conversion velocity.'
+      'ecommerce': {
+        title: 'E-Commerce & Digital Retail',
+        kicker: 'Archetype 04 · High-Conversion Omnichannel Stores',
+        count: '2 Flagship Stores',
+        desc: 'Omnichannel retail flagships, consumer electronics marketplaces, fashion lifestyle hubs, and seamless checkout funnels engineered for high-volume GMV.'
       },
       'app-design': {
         title: 'Mobile App Design',
         kicker: 'Archetype 05 · Native iOS & Android Systems',
         count: '6 Mobile Products',
         desc: 'High-scale digital wallets, cultural social networks, IoT smart offices, mobile banking portals, clean-energy tracking apps, and national QR payment ecosystems.'
+      },
+      'healthcare': {
+        title: 'Health Care & Digital Therapeutics',
+        kicker: 'Archetype 06 · Clinical AI & Patient Portals',
+        count: '2 Verified Platforms',
+        desc: 'Precision AI immune telemetry, digital therapeutics portals, remote patient monitoring systems, and clinical healthcare companions built to HIPAA and WCAG standards.'
       }
     };
 
