@@ -60,3 +60,18 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
   - `Whiz_5c14ef85.jpg` -> Whiz Intelligent AI Advanced Insight Graph Technology
   - `TalentX_53c9fde6.jpg` -> TalentX Enterprise Recruitment & HR Suite
 - Preserved 16:10 / 16:11 aspect ratios with top alignment for uncropped UI headers and navigation.
+
+## Fintech & Banking Showcase Visual Update
+- Upgraded all 6 Fintech & Banking cards with user-provided visual assets:
+  - `sslcommerz_78617072.jpg` -> SSLCOMMERZ Multi-Channel Payment Gateway & Checkout Engine
+  - `join-sslcommerz_68ce117b.jpg` -> Join SSLCOMMERZ Merchant Onboarding Portal (Digital KYC & 7-Day Trial)
+  - `basic-bank-app_2c547417.jpg` -> BASIC Bank Mobile Banking App (Account Dashboard, RTGS/NPSB Transfers)
+  - `nrb-connect_1ef15465.jpg` -> **NRB Connect Real-Time Online Account Opening & eKYC** (New Item)
+  - `fastpay-app_01058fda.jpg` -> FastPay Mobile Digital Wallet & Ecosystem (1M+ Users, PA-DSS)
+  - `premier-bank_4c2807a0.jpg` -> The Premier Bank Corporate Banking Suite (Transfer Statistics & Treasury)
+- Updated category counter and archetype metadata to reflect 6 verified platforms.
+- Also synchronized the App Design cards for FastPay and BASIC Bank with the authentic mobile assets.
+
+## Dashboard Showcase Visual Update
+- Replaced the AI Mail dashboard card image with the newly attached high-fidelity asset:
+  - `ai-mail_875a0eab.jpg` -> AI Mail Autonomous Inbox & Telemetry Cockpit (79% AI Effectiveness, Response Volume & Triage Queues).
