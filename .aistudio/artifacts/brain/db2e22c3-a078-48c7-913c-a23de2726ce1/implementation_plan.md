@@ -75,3 +75,25 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
 ## Dashboard Showcase Visual Update
 - Replaced the AI Mail dashboard card image with the newly attached high-fidelity asset:
   - `ai-mail_875a0eab.jpg` -> AI Mail Autonomous Inbox & Telemetry Cockpit (79% AI Effectiveness, Response Volume & Triage Queues).
+
+## Mobile App Design Showcase Visual Update
+- Replaced App Design cards with authentic user-provided designs:
+  - `mypeople-earth_fe9d4ebe.jpg` -> MyPeople Global Cultural Community & Social App (Flicks video, intercultural feed, profile)
+  - `employeebuddy-app_8d956edf.jpg` -> Employee Buddy (eBuddy) Mobile App (Workforce productivity, biometric attendance, task state machine & Gantt timeline)
+  - `bandhuchula-app_a1ba3a06.jpg` -> Bondhu Chula Clean Energy App (ECOEYE dashboard, offline stove registry, GIS tracking)
+  - `sslcommerz-merchant-app_65454ea9.jpg` -> **SSLCOMMERZ Merchant Mobile App** (Replaced Bangla QR Interoperable as requested; live transaction telemetry, dynamic payment links, refunds, and QR collections)
+- All 6 mobile apps (FastPay, MyPeople, eBuddy, BASIC Bank Magpie, Bondhu Chula, SSLCOMMERZ Merchant) now render authentic screenshots with top-aligned framing.
+
+## E-Commerce Showcase Visual Update
+- Replaced E-Commerce cards with authentic user-provided designs:
+  - `apex4u_dfaf6ee2.jpg` -> Apex4U Omnichannel Footwear & Lifestyle Store (Men's Formal Shoes catalog, faceted filters, Venturini product cards)
+  - `transcom_84a76cc4.jpg` -> Transcom Digital Consumer Electronics & Appliance Megastore (Brand boutique storefront, 0% EMI financing, daily deals & categories)
+- Both cards formatted with 16:11 aspect ratios and top alignment for clear display of promotional banners, category chips, and product grids.
+
+## Health Care Showcase Visual Update
+- Updated Health Care showcase:
+  - Title & Heading: Renamed to **"Algocyte - Oxford Immune Algorithmics (OIA)"**
+  - Image: Replaced with authentic clinical telemetry screenshot `algocyte_86ef6956.jpg` (`/public/assets/aistudio/algocyte_86ef6956.jpg`)
+  - Calibrated 16:11 ratio box with top alignment to display Stefan Salvatore's patient dashboard, 2.87 test score gauge, multi-analyte biomarker levels (COVS, HCT, HGB, LYMPH, MCH, MCV, MONO, PLT, RBC, NEUT, WBC, EOS, GLOB), and longitudinal test score graphs.
+  - Updated card metadata (`data-title`, `data-client`), case study modal bindings, and accessibility labels.
+
