@@ -49,3 +49,14 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
   - Verify card header feels airy, uncluttered, and structured with only 2 primary buttons + 1 overflow menu.
   - Verify `Live Site` and `View in Figma` text inside the overflow menu are crisp and readable in dark mode.
   - Test keyboard navigation and click-away dismissal for dropdown menus.
+
+## SaaS Platform Showcase Visual Update
+- Replaced all 7 SaaS Platform cards with real user-provided visual assets:
+  - `collablly_2baa5c21.jpg` -> Collablly Supply Chain & Supplier Portal
+  - `docomate_3bee0e29.jpg` -> Docomate AI Intelligent Document Processing
+  - `othership_dc1bacc6.jpg` -> Othership Hybrid Workplace & Desk Booking
+  - `caboodle_6b7b81b7.jpg` -> Caboodle Services CPG Sales Platform
+  - `exlo_86240282.jpg` -> Exelo Testto / Exlo Automation Platform
+  - `Whiz_5c14ef85.jpg` -> Whiz Intelligent AI Advanced Insight Graph Technology
+  - `TalentX_53c9fde6.jpg` -> TalentX Enterprise Recruitment & HR Suite
+- Preserved 16:10 / 16:11 aspect ratios with top alignment for uncropped UI headers and navigation.
