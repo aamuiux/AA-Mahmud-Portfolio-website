@@ -3256,19 +3256,30 @@
       margin-bottom: 1.5rem;
     }
     .about-photos-grid {
-      display: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 640px) {
+      .about-photos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        margin-top: 4rem;
+      }
     }
     @media (min-width: 1024px) {
       .about-photos-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
-        margin-top: 5rem;
+        margin-top: 4.5rem;
       }
     }
     .about-photo-cell {
       overflow: hidden;
       position: relative;
+      border: 1px dashed var(--line);
+      background: var(--surface-grey);
+      border-radius: 2px;
     }
     .about-photo-cell img {
       transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -4497,24 +4508,23 @@
             </div>
           </div>
 
-          <!-- Right: Three Paragraphs -->
+          <!-- Right: Two Paragraphs -->
           <div class="about-prose-col">
             <p class="about-p" data-motion="word" data-stagger="10">For over 12 years, I have led end-to-end product design across enterprise SaaS platforms, AI-native creation suites, fintech analytics, and mobile applications. My experience ranges from partnering with founders to validate zero-to-one concepts to collaborating with engineering directors to scale multi-brand design systems across 20+ distributed squads.</p>
-            <p class="about-p" data-motion="word" data-stagger="10">My approach balances deep empathy for user needs with sharp commercial rigor. Whether simplifying multi-step onboarding funnels, architecting high-density real-time dashboards, or designing human-in-the-loop AI steering controls, I ensure every interface is intuitive, accessible, and tied directly to core business KPIs and retention curves.</p>
             <p class="about-p" data-motion="word" data-stagger="10">As a seasoned design leader, I champion cross-functional alignment between Product Managers, Staff Engineers, and Executive Leadership. I establish mature design ops, mentor product designers, and deliver exhaustive Figma component guidelines and token systems that eliminate ambiguity and cut development rework in half.</p>
           </div>
         </div>
 
-        <!-- Photo Grid (3 landscape plates, 3 / 2) -->
+        <!-- Photo Grid (3 authentic workplace & team culture plates, 3 / 2) -->
         <div class="about-photos-grid">
           <div class="about-photo-cell ratio-box ratio-3-2 motion-plate" data-motion="plate" data-stagger-index="0" data-stagger="100">
-            <img src="/src/assets/images/ai_video_studio_ux_1791101157949.jpg" alt="Generative video timeline interface study" loading="lazy" referrerpolicy="no-referrer" />
+            <img src="/public/assets/aistudio/IMG_2761_2_36d5dc44.jpg" alt="AA Mahmud leading cross-functional UX design review and product critique with design team in office" style="object-position: center 30%;" loading="lazy" referrerpolicy="no-referrer" />
           </div>
           <div class="about-photo-cell ratio-box ratio-3-2 motion-plate" data-motion="plate" data-stagger-index="1" data-stagger="100">
-            <img src="/src/assets/images/ai_agent_graph_ux_1791101172201.jpg" alt="Autonomous multi-agent orchestration architecture" loading="lazy" referrerpolicy="no-referrer" />
+            <img src="/public/assets/aistudio/2149173772_1_cb1c845e.jpg" alt="AA Mahmud crafting digital product interface architecture and Figma design systems at iMac workstation" style="object-position: center 35%;" loading="lazy" referrerpolicy="no-referrer" />
           </div>
           <div class="about-photo-cell ratio-box ratio-3-2 motion-plate" data-motion="plate" data-stagger-index="2" data-stagger="100">
-            <img src="/src/assets/images/fintech_analytics_ux_1791101201101.jpg" alt="Growth metrics and algorithmic cockpit" loading="lazy" referrerpolicy="no-referrer" />
+            <img src="/public/assets/aistudio/telegram-cloud-photo-size-5-6059994135496080000-y_1_cce7123c.jpg" alt="Design squad culture, team celebration dinner and collaborative team milestone" style="object-position: center 35%;" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
 

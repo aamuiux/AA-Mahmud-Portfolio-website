@@ -97,3 +97,11 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
   - Calibrated 16:11 ratio box with top alignment to display Stefan Salvatore's patient dashboard, 2.87 test score gauge, multi-analyte biomarker levels (COVS, HCT, HGB, LYMPH, MCH, MCV, MONO, PLT, RBC, NEUT, WBC, EOS, GLOB), and longitudinal test score graphs.
   - Updated card metadata (`data-title`, `data-client`), case study modal bindings, and accessibility labels.
 
+## About The Lead Designer Authentic Image Showcase
+- Replaced 3 placeholder graphics in Home page's "About The Lead Designer" section with real workplace and team culture photography:
+  1. `IMG_2761_2_36d5dc44.jpg`: Cross-functional design team review sprint in office (team gathered around laptop and conference display in "WORLD'S OKAYEST UX DESIGNER" hoodies).
+  2. `2149173772_1_cb1c845e.jpg`: Lead designer at iMac workstation crafting interface architectures, token systems, and Othership wireframes.
+  3. `telegram-cloud-photo-size-5-6059994135496080000-y_1_cce7123c.jpg`: Collaborative design squad celebration, dinner, and positive team culture.
+- Responsive styling: Enhanced `.about-photos-grid` to be visible across all viewports (responsive single column stack on mobile, 3-column grid on tablet and desktop), wrapped in dashed border cards adhering to the design system.
+
+
