@@ -2283,11 +2283,13 @@
       font-weight: 600;
     }
     .timeline-highlights li::before {
-      content: "—";
+      content: "•";
       position: absolute;
       left: 0;
       color: var(--ink);
       font-weight: 700;
+      font-size: 1.15rem;
+      line-height: 1.35;
     }
     .timeline-tags-row {
       display: flex;
@@ -3196,7 +3198,14 @@
       }
       .about-prose-col {
         grid-column: span 5;
+        align-self: center;
       }
+    }
+    .about-prose-col {
+      align-self: center;
+    }
+    .about-prose-col .about-p:last-child {
+      margin-bottom: 0;
     }
     .about-heading {
       max-width: 20ch;
@@ -4509,7 +4518,7 @@
           </div>
 
           <!-- Right: Two Paragraphs -->
-          <div class="about-prose-col">
+          <div class="about-prose-col" style="align-self: center;">
             <p class="about-p" data-motion="word" data-stagger="10">For over 12 years, I have led end-to-end product design across enterprise SaaS platforms, AI-native creation suites, fintech analytics, and mobile applications. My experience ranges from partnering with founders to validate zero-to-one concepts to collaborating with engineering directors to scale multi-brand design systems across 20+ distributed squads.</p>
             <p class="about-p" data-motion="word" data-stagger="10">As a seasoned design leader, I champion cross-functional alignment between Product Managers, Staff Engineers, and Executive Leadership. I establish mature design ops, mentor product designers, and deliver exhaustive Figma component guidelines and token systems that eliminate ambiguity and cut development rework in half.</p>
           </div>
@@ -6386,8 +6395,8 @@
 
           <!-- Action Buttons -->
           <div class="profile-hero-actions">
-            <a href="mailto:aam.uiux@gmail.com?subject=Strategic%20Briefing%20Inquiry" class="cta-btn solid-light">
-              <span>Initiate Strategic Briefing</span>
+            <a href="https://calendly.com/aamsaikat-ux/20min" target="_blank" rel="noopener noreferrer" class="cta-btn solid-light book-call-trigger" title="Book a 20-min call on Calendly">
+              <span>Book a 20-min call</span>
               <span class="arrow" aria-hidden="true">→</span>
             </a>
             <a href="#experience" id="profile-scroll-exp-btn" class="cta-btn ghost-light">
@@ -6423,16 +6432,16 @@
           <span class="profile-stat-label">Years Experience</span>
         </div>
         <div class="profile-stat-box">
-          <span class="profile-stat-number">$180M+</span>
-          <span class="profile-stat-label">Client ARR Influenced</span>
+          <span class="profile-stat-number">500+</span>
+          <span class="profile-stat-label">Connections</span>
         </div>
         <div class="profile-stat-box">
-          <span class="profile-stat-number">24+</span>
-          <span class="profile-stat-label">Shipped Flagships</span>
+          <span class="profile-stat-number">13</span>
+          <span class="profile-stat-label">Recommendations</span>
         </div>
         <div class="profile-stat-box">
-          <span class="profile-stat-number">99.98%</span>
-          <span class="profile-stat-label">Design-to-Code Parity</span>
+          <span class="profile-stat-number">9+</span>
+          <span class="profile-stat-label">Countries Reached</span>
         </div>
       </div>
     </section>
@@ -6468,9 +6477,9 @@
           <div>
             <h3 class="timeline-role-title">Lead UI UX Designer (Team Lead)</h3>
             <ul class="timeline-highlights">
-              <li>Played a key role in <strong>AI-driven and data-driven decisions</strong> to convert complex AI models &amp; workflows into clear, user-centered experiences.</li>
-              <li>Designed AI-driven enterprise platforms, improving user adoption and client satisfaction by <strong>up to 20%</strong>.</li>
-              <li>Contributed to <strong>Payra Port automation</strong> by designing operational dashboards and mission-critical workflow systems.</li>
+              <li>Played a key role in <strong>AI-driven and data-driven decision</strong> to convert complex AI &amp; complex workflows: <strong>Whiz</strong> (ML demand forecasting and promotional planning for multi chain retail and manufacturing), <strong>Docomate.ai</strong> (LLM document intelligence), <strong>TalentX</strong> (agentic recruiting automation), and <strong>PromptVault</strong> (enterprise prompt management, in UAT with Citrin Cooperman).</li>
+              <li>Designed <strong>Collablly SRM platforms</strong>, drop supply chain costs <strong>upto 20%</strong> and boost on-time deliveries <strong>30%</strong>.</li>
+              <li>Contributed to <strong>Payra Port</strong> by designing operational dashboards and workflow systems.</li>
             </ul>
             <div class="timeline-tags-row">
               <span class="timeline-tag">AI-Driven UX</span>
@@ -6617,6 +6626,29 @@
           </div>
         </article>
 
+        <!-- Role 06: RMS IT. -->
+        <article class="profile-timeline-item">
+          <div class="timeline-meta-col">
+            <span class="timeline-dates">Oct 2014 – Dec 2015</span>
+            <p class="timeline-company"><strong>RMS IT.</strong>Dhaka, BD · Full Time</p>
+            <span class="timeline-tenure-badge">Web &amp; Theme Dev</span>
+          </div>
+          <div>
+            <h3 class="timeline-role-title">Web Developer and Designer</h3>
+            <ul class="timeline-highlights">
+              <li>Designed <strong>Themeforest wordpress themes and templates</strong>, increase sells and reduce support.</li>
+              <li>Develop responsive and device friendly web design.</li>
+            </ul>
+            <div class="timeline-tags-row">
+              <span class="timeline-tag">Themeforest</span>
+              <span class="timeline-tag">WordPress Themes</span>
+              <span class="timeline-tag">Responsive Web Design</span>
+              <span class="timeline-tag">UI Design &amp; Development</span>
+              <span class="timeline-tag">Dhaka, BD</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -6644,13 +6676,14 @@
             Architecting cognitive scaffolding for probabilistic models, taming hallucination, and engineering intuitive latency recovery.
           </p>
           <div class="skills-pill-cloud">
-            <span class="skill-badge">Generative Video Diffusion UX</span>
-            <span class="skill-badge">Multi-Agent Swarm Canvas</span>
-            <span class="skill-badge">Cognitive Scaffolding</span>
-            <span class="skill-badge">Deterministic Steering Presets</span>
-            <span class="skill-badge">Low-Latency Streaming States</span>
-            <span class="skill-badge">Prompt &amp; Context Visualizers</span>
-            <span class="skill-badge">Human-in-the-Loop Recovery</span>
+            <span class="skill-badge">AI-Assisted Design</span>
+            <span class="skill-badge">Generative AI Tools</span>
+            <span class="skill-badge">AI-Powered UI/UX Workflows</span>
+            <span class="skill-badge">AI-Driven Research &amp; Ideation</span>
+            <span class="skill-badge">Rapid Prototyping</span>
+            <span class="skill-badge">Design Automation</span>
+            <span class="skill-badge">AI Output Evaluation</span>
+            <span class="skill-badge">Human-Centered AI Design</span>
           </div>
         </div>
 

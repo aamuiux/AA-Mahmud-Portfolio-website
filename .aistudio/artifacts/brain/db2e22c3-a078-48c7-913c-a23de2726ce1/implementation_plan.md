@@ -105,9 +105,14 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
 - Responsive styling: Enhanced `.about-photos-grid` to be visible across all viewports (responsive single column stack on mobile, 3-column grid on tablet and desktop), wrapped in dashed border cards adhering to the design system.
 
 ## Category Showcase Pages: Professional Profiles & Networks Footer
-- Added "Professional Profiles & Networks" footer block into the dedicated archetype showcase view (`#showcase-view`), ensuring it appears across all category pages (SaaS Platforms, Dashboards & Analytics, Financial Infrastructure & Fintech, E-Commerce, Mobile App Design, Health Care):
+- Added "Professional Profiles & Networks" footer block with a divider and gray background (`var(--surface-grey)`) into `#showcase-view`, visible across all category pages right above the site footer:
   - Displays the 3 social & contact cards: LinkedIn, GitHub, and Direct Email (`aam.uiux@gmail.com`) with clean dashed borders, hover lift effects, and adaptive styling for both light and dark themes.
-  - Positioned seamlessly above the "Return to AA Mahmud Home" return bar.
+  - Positioned above the global footer ("Abdullah Al Mahmud | Lead UI/UX Designer") with a dashed divider.
 
-
+## Profile View Updates
+- Updated Profile Header CTA: Changed "Initiate Strategic Briefing" to **"Book a 20-min call"** wired with Calendly integration (`https://calendly.com/aamsaikat-ux/20min`).
+- Updated Career Record: Added **RMS IT.** (Oct 2014 – Dec 2015, Dhaka, BD · Full Time) as Web Developer and Designer:
+  - Designed 'Themeforest' WordPress themes and templates, increasing sales and reducing support.
+  - Developed responsive and device-friendly web design.
+  - Styled with circular dot bullets (`•`) and capability tags.
 
