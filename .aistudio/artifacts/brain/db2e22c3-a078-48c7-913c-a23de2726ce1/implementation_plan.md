@@ -104,4 +104,10 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
   3. `telegram-cloud-photo-size-5-6059994135496080000-y_1_cce7123c.jpg`: Collaborative design squad celebration, dinner, and positive team culture.
 - Responsive styling: Enhanced `.about-photos-grid` to be visible across all viewports (responsive single column stack on mobile, 3-column grid on tablet and desktop), wrapped in dashed border cards adhering to the design system.
 
+## Category Showcase Pages: Professional Profiles & Networks Footer
+- Added "Professional Profiles & Networks" footer block into the dedicated archetype showcase view (`#showcase-view`), ensuring it appears across all category pages (SaaS Platforms, Dashboards & Analytics, Financial Infrastructure & Fintech, E-Commerce, Mobile App Design, Health Care):
+  - Displays the 3 social & contact cards: LinkedIn, GitHub, and Direct Email (`aam.uiux@gmail.com`) with clean dashed borders, hover lift effects, and adaptive styling for both light and dark themes.
+  - Positioned seamlessly above the "Return to AA Mahmud Home" return bar.
+
+
 
