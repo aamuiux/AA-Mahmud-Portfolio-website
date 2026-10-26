@@ -116,3 +116,29 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
   - Developed responsive and device-friendly web design.
   - Styled with circular dot bullets (`•`) and capability tags.
 
+## Home Page Selected Engagements Content Refinements
+- **Collablly** (05): Corrected name from "Collably" to **"Collablly"** and updated description to *"SRM platform that gives operational workflows to improve efficiency and decision-making."*
+- **Gain Health** (08): Updated description to *"Large-Scale Food Fortification, Goals by improving access to fortified foods to 1.2 billion people by 2025."*
+- **BASIC Bank** (11): Corrected typo from "BAISC Bank" to **"BASIC Bank"**.
+- **AI Mail** (12): Removed duplicate *"triage triage"* -> *"Autonomous generative email client with intelligent triage"*.
+- **Exlo** (13): Updated description to *"Next-Gen AI ecosystem Devops and QA Studio for deep monitoring"*.
+
+## Executive Endorsements Real Recommendations Update
+- Replaced placeholder testimonials on the home page with 3 authentic executive recommendations:
+  1. **Shahzada Redwan** (Director of Engineering, Field Nation):
+     - Quote: *“Abdullah played a key role in the UI/UX design of several fintech and tech applications. he has an excellent understanding of user-centered design. His creativity, strong analytical skills, and in-depth knowledge of UX trends make him a valuable asset to any team.”*
+     - LinkedIn: `https://www.linkedin.com/in/shazredwan/` (linked to both name and avatar photo).
+     - Photo: `/public/assets/endorsements/shahzada_redwan.jpg`.
+  2. **Mohammad Bahar Uddin** (SVP, Head of Technology at QuantFintech Ltd):
+     - Quote: *“Abdullah's attention to detail and creative problem-solving skills are unparalleled. He has extensive experience in a variety of industries, including fintech, eCommerce, B2B, B2C, ERP, HRM, and CRM, which has made him a valuable member of our team.”*
+     - LinkedIn: `https://www.linkedin.com/in/mohammad-bahar-uddin-52418686/` (linked to both name and avatar photo).
+     - Photo: `/public/assets/endorsements/bahar_uddin.jpg`.
+  3. **Md. Taukir Hasan** (Head of Product & AI, SSL Wireless):
+     - Quote: *“I particularly impressed with Abdullah's ability to strike a balance between design and business objectives. He is adept at coordinating the design since he recognizes how important design is to achieving business goals.”*
+     - LinkedIn: `https://www.linkedin.com/in/taukirxhasan/` (linked to both name and avatar photo).
+     - Photo: `/public/assets/endorsements/taukir_hasan.jpg`.
+- Styled with circular executive avatar badges, hover zoom micro-interactions, official LinkedIn iconography, and adaptive dark mode contrast.
+
+
+
+

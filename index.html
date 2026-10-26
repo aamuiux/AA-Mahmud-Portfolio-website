@@ -8,7 +8,12 @@
   <meta property="og:title" content="AA Mahmud — Lead UI/UX Designer &amp; Product Strategist" />
   <meta property="og:description" content="Portfolio of AA Mahmud: 12+ years experienced Lead UI/UX Designer specializing in enterprise design systems, complex SaaS platforms, and AI-native interface ergonomics." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="/public/assets/aistudio/abdullah-al-mahmud_f00732dd.jpg" />
+  <meta property="og:image:alt" content="AA Mahmud — Lead UI/UX Designer &amp; Product Strategist" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AA Mahmud — Lead UI/UX Designer &amp; Product Strategist" />
+  <meta name="twitter:description" content="Portfolio of AA Mahmud: 12+ years experienced Lead UI/UX Designer specializing in enterprise design systems, complex SaaS platforms, and AI-native interface ergonomics." />
+  <meta name="twitter:image" content="/public/assets/aistudio/abdullah-al-mahmud_f00732dd.jpg" />
 
   <!-- Fonts: Satoshi & Space Grotesk -->
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" />
@@ -3499,27 +3504,79 @@
     }
     .testimonial-quote {
       font-family: "Space Grotesk", sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.625;
+      font-size: 1.0625rem;
+      line-height: 1.6;
       color: var(--ink);
     }
     @media (min-width: 1024px) {
       .testimonial-quote {
-        font-size: 1.5rem;
+        font-size: 1.1875rem;
       }
     }
     .testimonial-caption {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
     }
-    .testimonial-author {
-      font-size: 1rem;
+    .testimonial-author-row {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .testimonial-avatar-link {
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+    }
+    .testimonial-avatar-link:hover {
+      transform: scale(1.08);
+      border-color: var(--line-strong);
+    }
+    .testimonial-avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .testimonial-author-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .testimonial-author-name-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-decoration: none;
       color: var(--ink);
-      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+    .testimonial-author-name-link:hover {
+      opacity: 0.75;
+    }
+    .testimonial-author-name-link .testimonial-author {
+      font-size: 0.9375rem;
+      color: inherit;
+      font-weight: 600;
+    }
+    .testimonial-linkedin-icon {
+      color: #0a66c2;
+      flex-shrink: 0;
+      transition: color 0.2s ease;
+    }
+    html.dark .testimonial-linkedin-icon,
+    [data-theme="dark"] .testimonial-linkedin-icon {
+      color: #70b5f9;
     }
     .testimonial-role {
-      font-size: 0.875rem;
+      font-size: 0.8125rem;
       color: var(--ink-muted);
-      margin-top: 0.25rem;
+      margin-top: 0.15rem;
+      line-height: 1.35;
     }
 
     /* Exhibitions Section */
@@ -4377,13 +4434,6 @@
   <!-- Mobile Backdrop -->
   <div class="sidebar-mobile-backdrop" id="sidebar-mobile-backdrop" aria-hidden="true"></div>
 
-  <!-- Mobile Floating Trigger -->
-  <button class="mobile-archetype-trigger" id="mobile-archetype-trigger" aria-label="Open Showcase Archetypes Sidebar">
-    <span class="trigger-diamond" aria-hidden="true"></span>
-    <span>Showcase Archetypes</span>
-    <span class="trigger-count">21</span>
-  </button>
-
   <!-- Main Site Wrapper (Offset for full-height left sidebar on desktop) -->
   <div class="site-page-wrapper">
 
@@ -4671,36 +4721,72 @@
         </div>
 
         <div class="testimonials-grid">
-          <!-- Testimonial 01 -->
+          <!-- Testimonial 01: Shahzada Redwan -->
           <figure class="testimonial-figure motion-fade-up" data-motion="fade-up" data-stagger-index="0" data-stagger="110">
             <blockquote class="testimonial-quote">
-              “Mahmud transformed our core product experience. By rethinking our workflow architecture and designing an intuitive creative canvas, our user retention jumped by 140% within two months of launch. He understands product strategy just as deeply as visual craft.”
+              “Abdullah played a key role in the UI/UX design of several fintech and tech applications. he has an excellent understanding of user-centered design. His creativity, strong analytical skills, and in-depth knowledge of UX trends make him a valuable asset to any team.”
             </blockquote>
             <figcaption class="testimonial-caption">
-              <p class="testimonial-author">Dr. Aris Vance</p>
-              <p class="testimonial-role">Chief Technology Officer, CineGraph AI</p>
+              <div class="testimonial-author-row">
+                <a href="https://www.linkedin.com/in/shazredwan/" target="_blank" rel="noreferrer noopener" class="testimonial-avatar-link" aria-label="Visit Shahzada Redwan's LinkedIn Profile" title="Shahzada Redwan on LinkedIn">
+                  <img src="/public/assets/endorsements/shahzada_redwan.jpg" alt="Shahzada Redwan — Director of Engineering, Field Nation" class="testimonial-avatar-img" width="48" height="48" loading="lazy" />
+                </a>
+                <div class="testimonial-author-info">
+                  <a href="https://www.linkedin.com/in/shazredwan/" target="_blank" rel="noreferrer noopener" class="testimonial-author-name-link" title="Shahzada Redwan on LinkedIn">
+                    <span class="testimonial-author">Shahzada Redwan</span>
+                    <svg class="testimonial-linkedin-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                  </a>
+                  <p class="testimonial-role">Director of Engineering, Field Nation</p>
+                </div>
+              </div>
             </figcaption>
           </figure>
 
-          <!-- Testimonial 02 -->
+          <!-- Testimonial 02: Mohammad Bahar Uddin -->
           <figure class="testimonial-figure motion-fade-up" data-motion="fade-up" data-stagger-index="1" data-stagger="110">
             <blockquote class="testimonial-quote">
-              “The design system Mahmud architected for our 24 squads saved us over $4.2M in engineering rework in year one alone. He provides the rare leadership that bridges product vision, user needs, and frontend engineering feasibility.”
+              “Abdullah's attention to detail and creative problem-solving skills are unparalleled. He has extensive experience in a variety of industries, including fintech, eCommerce, B2B, B2C, ERP, HRM, and CRM, which has made him a valuable member of our team.”
             </blockquote>
             <figcaption class="testimonial-caption">
-              <p class="testimonial-author">Marcus Chen</p>
-              <p class="testimonial-role">VP of Product Engineering, HyperScale Global</p>
+              <div class="testimonial-author-row">
+                <a href="https://www.linkedin.com/in/mohammad-bahar-uddin-52418686/" target="_blank" rel="noreferrer noopener" class="testimonial-avatar-link" aria-label="Visit Mohammad Bahar Uddin's LinkedIn Profile" title="Mohammad Bahar Uddin on LinkedIn">
+                  <img src="/public/assets/endorsements/bahar_uddin.jpg" alt="Mohammad Bahar Uddin — SVP, Head of Technology at QuantFintech Ltd" class="testimonial-avatar-img" width="48" height="48" loading="lazy" />
+                </a>
+                <div class="testimonial-author-info">
+                  <a href="https://www.linkedin.com/in/mohammad-bahar-uddin-52418686/" target="_blank" rel="noreferrer noopener" class="testimonial-author-name-link" title="Mohammad Bahar Uddin on LinkedIn">
+                    <span class="testimonial-author">Mohammad Bahar Uddin</span>
+                    <svg class="testimonial-linkedin-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                  </a>
+                  <p class="testimonial-role">SVP, Head of Technology at QuantFintech Ltd</p>
+                </div>
+              </div>
             </figcaption>
           </figure>
 
-          <!-- Testimonial 03 -->
+          <!-- Testimonial 03: Md. Taukir Hasan -->
           <figure class="testimonial-figure motion-fade-up" data-motion="fade-up" data-stagger-index="2" data-stagger="110">
             <blockquote class="testimonial-quote">
-              “Mahmud is that rare 1% Lead UI/UX Designer who can align executive stakeholders, dive deep into complex domain mechanics, and deliver clean, hyper-intuitive design systems that users love.”
+              “I particularly impressed with Abdullah's ability to strike a balance between design and business objectives. He is adept at coordinating the design since he recognizes how important design is to achieving business goals.”
             </blockquote>
             <figcaption class="testimonial-caption">
-              <p class="testimonial-author">Elena Rostova</p>
-              <p class="testimonial-role">Head of Product &amp; AI, OmniPulse Labs</p>
+              <div class="testimonial-author-row">
+                <a href="https://www.linkedin.com/in/taukirxhasan/" target="_blank" rel="noreferrer noopener" class="testimonial-avatar-link" aria-label="Visit Md. Taukir Hasan's LinkedIn Profile" title="Md. Taukir Hasan on LinkedIn">
+                  <img src="/public/assets/endorsements/taukir_hasan.jpg" alt="Md. Taukir Hasan — Head of Product &amp; AI, SSL Wireless" class="testimonial-avatar-img" width="48" height="48" loading="lazy" />
+                </a>
+                <div class="testimonial-author-info">
+                  <a href="https://www.linkedin.com/in/taukirxhasan/" target="_blank" rel="noreferrer noopener" class="testimonial-author-name-link" title="Md. Taukir Hasan on LinkedIn">
+                    <span class="testimonial-author">Md. Taukir Hasan</span>
+                    <svg class="testimonial-linkedin-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                  </a>
+                  <p class="testimonial-role">Head of Product &amp; AI, SSL Wireless</p>
+                </div>
+              </div>
             </figcaption>
           </figure>
         </div>
@@ -4753,8 +4839,8 @@
           <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="1" data-stagger="80">
             <span class="exhibition-num">05</span>
             <div class="exhibition-content">
-              <span class="exhibition-name">Collably</span>
-              <p class="exhibition-desc">Collaborative team workspace &amp; agile workflow synchronization</p>
+              <span class="exhibition-name">Collablly</span>
+              <p class="exhibition-desc">SRM platform that gives operational workflows to improve efficiency and decision-making.</p>
             </div>
           </li>
           <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="2" data-stagger="80">
@@ -4775,7 +4861,7 @@
             <span class="exhibition-num">08</span>
             <div class="exhibition-content">
               <span class="exhibition-name">Gain Health</span>
-              <p class="exhibition-desc">Digital therapeutics, preventative care &amp; patient clinical portal</p>
+              <p class="exhibition-desc">Large-Scale Food Fortification, Goals by improving access to fortified foods to 1.2 billion people by 2025.</p>
             </div>
           </li>
           <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="2" data-stagger="80">
@@ -4795,7 +4881,7 @@
           <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="1" data-stagger="80">
             <span class="exhibition-num">11</span>
             <div class="exhibition-content">
-              <span class="exhibition-name">BAISC Bank</span>
+              <span class="exhibition-name">BASIC Bank</span>
               <p class="exhibition-desc">Commercial banking core, treasury analytics &amp; mobile transfers</p>
             </div>
           </li>
@@ -4803,14 +4889,14 @@
             <span class="exhibition-num">12</span>
             <div class="exhibition-content">
               <span class="exhibition-name">AI Mail</span>
-              <p class="exhibition-desc">Autonomous generative email client with intelligent triage triage</p>
+              <p class="exhibition-desc">Autonomous generative email client with intelligent triage</p>
             </div>
           </li>
           <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="0" data-stagger="80">
             <span class="exhibition-num">13</span>
             <div class="exhibition-content">
               <span class="exhibition-name">Exlo</span>
-              <p class="exhibition-desc">Next-gen enterprise asset tracking &amp; cross-border freight suite</p>
+              <p class="exhibition-desc">Next-Gen AI ecosystem Devops and QA Studio for deep monitoring</p>
             </div>
           </li>
           <li class="exhibition-item motion-fade-up" data-motion="fade-up" data-col-index="1" data-stagger="80">
@@ -4955,7 +5041,7 @@
 
         <div class="cta-socials-grid">
           <!-- LinkedIn -->
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener" class="cta-social-card" aria-label="Visit LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/aamuiux/" target="_blank" rel="noreferrer noopener" class="cta-social-card" aria-label="Visit LinkedIn Profile">
             <div class="cta-social-card-left">
               <div class="cta-social-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -4971,7 +5057,7 @@
           </a>
 
           <!-- GitHub -->
-          <a href="https://github.com" target="_blank" rel="noreferrer noopener" class="cta-social-card" aria-label="Visit GitHub Profile">
+          <a href="https://github.com/aamuiux/" target="_blank" rel="noreferrer noopener" class="cta-social-card" aria-label="Visit GitHub Profile">
             <div class="cta-social-card-left">
               <div class="cta-social-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -6400,7 +6486,7 @@
               <span class="arrow" aria-hidden="true">→</span>
             </a>
             <a href="#experience" id="profile-scroll-exp-btn" class="cta-btn ghost-light">
-              <span>Explore Career Record</span>
+              <span>My Resume</span>
               <span class="arrow" aria-hidden="true">↓</span>
             </a>
           </div>
@@ -6980,8 +7066,8 @@
 
       <!-- Social & Connect Links -->
       <div class="profile-socials-row">
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener" class="profile-social-link">LinkedIn ↗</a>
-        <a href="https://github.com" target="_blank" rel="noreferrer noopener" class="profile-social-link">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/aamuiux/" target="_blank" rel="noreferrer noopener" class="profile-social-link">LinkedIn ↗</a>
+        <a href="https://github.com/aamuiux/" target="_blank" rel="noreferrer noopener" class="profile-social-link">GitHub ↗</a>
         <a href="https://x.com" target="_blank" rel="noreferrer noopener" class="profile-social-link">Twitter / X ↗</a>
         <a href="mailto:aam.uiux@gmail.com" class="profile-social-link">aam.uiux@gmail.com</a>
       </div>
@@ -7056,8 +7142,8 @@
             <p class="menu-bottom-location">Dhaka · Global Remote</p>
           </div>
           <div class="menu-bottom-socials">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/aamuiux/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a href="https://github.com/aamuiux/" target="_blank" rel="noreferrer noopener">GitHub</a>
             <a href="https://x.com" target="_blank" rel="noreferrer noopener">Twitter / X</a>
           </div>
         </div>
