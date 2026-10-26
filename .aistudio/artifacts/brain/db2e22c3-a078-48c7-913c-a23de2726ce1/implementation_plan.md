@@ -155,6 +155,12 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
 - **SSL Wireless Internal Progression**: Fixed date range for *Senior UX Engineer* subrole to **Jan 2021 – Dec 2021**, perfectly aligning with the subsequent promotion to *UX Analyst Manager (Assistant Team Lead)* starting **Jan 2022 – April 2025** without any confusing year overlap.
 - **Oxford Immune Algorithmics Clarification**: Explicitly labeled Oxford Immune Algorithmics (Jan 2021 – Mar 2022) as **"United Kingdom · Remote · Part Time"** with title **"UI/UX Designer (Part-Time / Contract)"** and tag **"Part-Time / Contract"**, making it crystal-clear to recruiters that this was a remote part-time consulting engagement alongside the primary SSL Wireless tenure.
 
+## Social Meta Image Asset Path Update
+- Copied verified profile portrait to `/public/assets/abdullah-al-mahmud.jpg`.
+- Updated OpenGraph (`og:image`) and Twitter (`twitter:image`) meta tags in `<head>` to reference `/assets/abdullah-al-mahmud.jpg` directly, ensuring clean canonical URLs for social platforms and link scrapers.
+- Updated the Profile View portrait plate `<img>` source to `/assets/abdullah-al-mahmud.jpg`.
+
+
 
 
 
