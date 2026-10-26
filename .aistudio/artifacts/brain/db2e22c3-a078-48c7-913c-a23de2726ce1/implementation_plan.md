@@ -139,6 +139,24 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
      - Photo: `/public/assets/endorsements/taukir_hasan.jpg`.
 - Styled with circular executive avatar badges, hover zoom micro-interactions, official LinkedIn iconography, and adaptive dark mode contrast.
 
+## Case Study Links, Gain Health Alignment & Context Renaming
+- **Twitter / X Removal**: Removed the hidden Twitter / X link from the Profile View and modal menu.
+- **Gain Health Project Card Alignment**: Synchronized the project card in `#showcase-feed` with the Selected Engagements description:
+  - Title: *"Gain Health — Large-Scale Food Fortification"*
+  - Medium & Description: *"Large-Scale Food Fortification, Goals by improving access to fortified foods to 1.2 billion people by 2025."*
+  - ROI pills: *"1.2B People Target"* · *"Food Fortification"*.
+- **Real Figma Case Study Prototype Links**:
+  - **Collablly** (SaaS): Connected Case Study button to `https://www.figma.com/proto/RJNGvW0VbxsTNiVaULwOh7/Collably-SRM-Revamp?page-id=29%3A55647&node-id=29-55649&viewport=349%2C265%2C0.34&t=VpLRVkoMzwbKPsxq-1&scaling=scale-down-width&content-scaling=fixed`.
+  - **Othership** (SaaS): Connected Case Study button to `https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=834%3A13336&node-id=834-48646&viewport=340%2C356%2C0.38&t=hVYbHMDEUp3cpLrL-1&scaling=min-zoom&content-scaling=fixed`.
+  - **BASIC Bank** (Fintech & Mobile App): Connected Case Study button to `https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=910%3A1565&node-id=938-29328&viewport=97%2C187%2C0.16&t=Xz07mO5pxB90E8B0-1&scaling=min-zoom&content-scaling=fixed`.
+- **Project Context Renaming**: Renamed all other project brief triggers from generic "Case Study" to **"Project Context"**, opening the architectural project context modal.
+
+## Career Record Timeline Overlap & Recruiter Clarity
+- **SSL Wireless Internal Progression**: Fixed date range for *Senior UX Engineer* subrole to **Jan 2021 – Dec 2021**, perfectly aligning with the subsequent promotion to *UX Analyst Manager (Assistant Team Lead)* starting **Jan 2022 – April 2025** without any confusing year overlap.
+- **Oxford Immune Algorithmics Clarification**: Explicitly labeled Oxford Immune Algorithmics (Jan 2021 – Mar 2022) as **"United Kingdom · Remote · Part Time"** with title **"UI/UX Designer (Part-Time / Contract)"** and tag **"Part-Time / Contract"**, making it crystal-clear to recruiters that this was a remote part-time consulting engagement alongside the primary SSL Wireless tenure.
+
+
+
 
 
 
