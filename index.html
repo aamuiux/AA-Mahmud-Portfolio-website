@@ -4034,12 +4034,17 @@
     body.is-profile-view #category-footer-socials {
       display: block !important;
     }
+    #category-footer-socials .cta-socials-header {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
     body.is-category-view #footer-simple-inner,
     body.is-profile-view #footer-simple-inner {
       border-top: 1px dashed var(--line);
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0;
       padding-top: 2rem;
       display: flex;
     }
@@ -7101,7 +7106,7 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div id="category-footer-socials" class="category-footer-socials" style="display: none;">
-        <div class="cta-socials-header">
+        <div class="cta-socials-header" style="border-top: none; padding-top: 0; margin-top: 0;">
           <span class="cta-socials-label">Professional Profiles &amp; Networks</span>
           <span style="font-size: 0.75rem; color: var(--on-dark-faint);">Connect directly</span>
         </div>
@@ -7157,7 +7162,7 @@
         </div>
       </div>
 
-      <div class="footer-simple-inner" id="footer-simple-inner">
+      <div class="footer-simple-inner" id="footer-simple-inner" style="margin-bottom: 0;">
         <div class="footer-simple-brand">
           <div class="header-logo footer-logo" style="cursor: default;">
             <span class="logo-diamond" aria-hidden="true"></span>
