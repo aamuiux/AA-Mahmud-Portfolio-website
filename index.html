@@ -355,6 +355,7 @@
       }
       .site-page-wrapper {
         margin-left: 290px;
+        padding-top: 0 !important;
         width: calc(100% - 290px);
         min-width: 0;
         overflow-x: visible;
@@ -935,6 +936,9 @@
       justify-content: space-between;
       overflow-y: auto;
       overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-y: contain;
+      touch-action: pan-y;
       padding: 1.5rem 1.15rem 1.35rem;
       transition: background-color 0.35s ease, border-color 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       scrollbar-width: thin;
@@ -952,11 +956,23 @@
         transform: translateX(-100%);
         width: 300px;
         max-width: 86vw;
+        height: 100vh;
+        height: 100dvh;
+        max-height: 100dvh;
         box-shadow: none !important;
         visibility: hidden;
         pointer-events: none;
         z-index: 100;
-        padding: 1.25rem 1.15rem max(1.15rem, env(safe-area-inset-bottom, 16px));
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        gap: 1.25rem;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+        overscroll-behavior-y: contain !important;
+        touch-action: pan-y !important;
+        padding: 1.25rem 1.15rem max(2rem, env(safe-area-inset-bottom, 28px));
         transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, visibility 0.35s ease;
       }
       .site-archetypes-sidebar.is-open {
@@ -965,9 +981,16 @@
         visibility: visible;
         pointer-events: auto;
       }
+      .sidebar-top-block,
+      .sidebar-center-block,
+      .sidebar-bottom-block {
+        flex-shrink: 0 !important;
+        width: 100%;
+      }
       .sidebar-bottom-block {
         padding-top: 0.85rem;
         gap: 0.85rem;
+        padding-bottom: 0.5rem;
       }
       .sidebar-profile-card {
         margin-bottom: 0 !important;
@@ -1359,24 +1382,31 @@
     @media (max-width: 1023px) {
       .mobile-sticky-header {
         display: block;
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 85;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        height: 58px;
+        z-index: 90;
         background: var(--surface-translucent);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         border-bottom: 1px solid var(--line);
+        box-sizing: border-box;
         transition: background-color 0.35s ease, border-color 0.35s ease;
+      }
+      .site-page-wrapper {
+        padding-top: 58px;
       }
       .mobile-header-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.85rem 1.25rem;
+        padding: 0 1.25rem;
+        height: 100%;
         gap: 0.75rem;
+        box-sizing: border-box;
       }
       .mobile-header-brand {
         display: flex;
@@ -4348,7 +4378,7 @@
 <body id="top">
 
   <!-- Persistent Full-Height Left Sidebar: Showcase Archetypes -->
-  <aside class="site-archetypes-sidebar" id="site-archetypes-sidebar" aria-label="Showcase Archetypes Full Sidebar">
+  <aside class="site-archetypes-sidebar" id="site-archetypes-sidebar" data-lenis-prevent aria-label="Showcase Archetypes Full Sidebar">
     
     <!-- Top Block: Brand & Monogram -->
     <div class="sidebar-top-block">
@@ -7601,7 +7631,10 @@
         mobileBurgerBtn.classList.add('is-active');
         mobileBurgerBtn.setAttribute('aria-expanded', 'true');
       }
+      if (lenis) lenis.stop();
       document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none';
     }
 
     function closeMobileSidebar() {
@@ -7611,7 +7644,10 @@
         mobileBurgerBtn.classList.remove('is-active');
         mobileBurgerBtn.setAttribute('aria-expanded', 'false');
       }
+      if (lenis) lenis.start();
       document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.touchAction = '';
     }
 
     function toggleMobileSidebar() {
@@ -7625,7 +7661,12 @@
     if (mobileBurgerBtn) mobileBurgerBtn.addEventListener('click', toggleMobileSidebar);
     if (mobileTrigger) mobileTrigger.addEventListener('click', openMobileSidebar);
     if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeMobileSidebar);
-    if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeMobileSidebar);
+    if (sidebarBackdrop) {
+      sidebarBackdrop.addEventListener('click', closeMobileSidebar);
+      sidebarBackdrop.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+      }, { passive: false });
+    }
 
     if (mobileHeaderBrand) {
       mobileHeaderBrand.addEventListener('click', (e) => {
