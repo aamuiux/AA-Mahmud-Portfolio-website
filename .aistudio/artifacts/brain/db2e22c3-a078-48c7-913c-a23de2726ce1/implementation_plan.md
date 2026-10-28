@@ -160,6 +160,11 @@ Apply UX laws (Hick's Law & Miller's Law) to reduce cognitive load and visual cl
 - Updated OpenGraph (`og:image`) and Twitter (`twitter:image`) meta tags in `<head>` to reference `/assets/abdullah-al-mahmud.jpg` directly, ensuring clean canonical URLs for social platforms and link scrapers.
 - Updated the Profile View portrait plate `<img>` source to `/assets/abdullah-al-mahmud.jpg`.
 
+## Favicon Asset & Recommendation Copy Refinement
+- **Favicon Configured**: Copied user uploaded site icon `/public/assets/aistudio/saikatuiux-site-icon_2cc2f4a7.png` to `/public/favicon.png` and `/public/favicon.ico`. Added `<link rel="icon">`, `<link rel="shortcut icon">`, and `<link rel="apple-touch-icon">` tags in `<head>`.
+- **Shahzada Redwan Recommendation Copy**: Refined the quote copy in Executive Endorsements to: *“Abdullah played a key role in the UI/UX design of several fintech and tech applications and has an excellent understanding of user-centered design. His creativity, strong analytical skills, and in-depth knowledge of UX trends make him a valuable asset to any team.”*
+
+
 
 
 
