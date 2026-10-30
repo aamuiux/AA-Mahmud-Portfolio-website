@@ -1,0 +1,974 @@
+[
+  {
+    "category": "saas",
+    "title": "Collablly Supply Chain Collaboration",
+    "titleHtml": "Collablly Supply Chain Collaboration",
+    "kicker": "",
+    "client": "Collablly Technologies",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "+3.8x PO Cycle Velocity",
+    "metricVal": "+3.8x PO Cycle Velocity",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · Supplier &amp; Operations Collaboration",
+    "challenge": "Manufacturing and distribution teams suffered from fragmented supplier email threads, uncoordinated purchase orders, and high manual follow-up overhead.",
+    "solution": "Architected a unified supplier collaboration portal featuring real-time purchase order lifecycle tracking, automated approval multi-tier workflows, and inventory delivery risk telemetry.",
+    "tech": "React · TypeScript · Tailwind CSS · Workflow Engine · REST &amp; WebSockets",
+    "imageSrc": "/public/assets/aistudio/collablly_2baa5c21.jpg",
+    "imageAlt": "Collablly Supply Chain Collaboration Platform — Supplier PO Management",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/RJNGvW0VbxsTNiVaULwOh7/Collably-SRM-Revamp?page-id=29%3A55647&node-id=29-55649&viewport=349%2C265%2C0.34&t=VpLRVkoMzwbKPsxq-1&scaling=scale-down-width&content-scaling=fixed",
+        "cls": "showcase-action-link action-case-study",
+        "text": "Case Study\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/proto/RJNGvW0VbxsTNiVaULwOh7/Collably-SRM-Revamp?page-id=29%3A55647&node-id=29-55649&viewport=349%2C265%2C0.34&t=VpLRVkoMzwbKPsxq-1&scaling=scale-down-width&content-scaling=fixed",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://collablly.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                  Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "saas",
+    "title": "Docomate AI Document Processing",
+    "titleHtml": "Docomate AI Document Processing",
+    "kicker": "",
+    "client": "Docomate Intelligence",
+    "year": "2026",
+    "yearTag": "2026",
+    "roi": "99.4% Extraction Precision",
+    "metricVal": "99.4% Extraction Precision",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · Intelligent Document Processing &amp; OCR",
+    "challenge": "Knowledge workers wasted thousands of monthly hours manually transcribing invoices, bill-of-ladings, and complex multi-page unstructured PDF files into internal ERP systems.",
+    "solution": "Engineered a dual-pane intelligent document processing studio with side-by-side OCR visualization, confidence heatmaps, schema-guided validation, and instant JSON/CSV export.",
+    "tech": "React · TypeScript · Next.js · Canvas OCR Overlay · Web Workers · REST API",
+    "imageSrc": "/public/assets/aistudio/docomate_3bee0e29.jpg",
+    "imageAlt": "Docomate AI Intelligent Document Processing — OCR & Schema Extraction",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://docomate.ai/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                  Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "saas",
+    "title": "Othership Hybrid Workplace Platform",
+    "titleHtml": "Othership Hybrid Workplace Platform",
+    "kicker": "",
+    "client": "Othership Workspaces",
+    "year": "2022",
+    "yearTag": "2022",
+    "roi": "+92% Space Utilization",
+    "metricVal": "+92% Space Utilization",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · Workplace &amp; Desk Booking",
+    "challenge": "Enterprises transitioning to flexible hybrid work struggled with empty desks, friction booking meeting rooms, and disconnected team scheduling.",
+    "solution": "Designed an interactive multi-floor digital twin floorplan with live presence indicators, 1-click hot-desk reservations, and calendar synchronization across 8,000+ workplace tools.",
+    "tech": "TypeScript · React · SVG Interactive Floorplan · Tailwind CSS · Realtime WebSockets",
+    "imageSrc": "/public/assets/aistudio/othership_dc1bacc6.jpg",
+    "imageAlt": "Othership Hybrid Workplace & Desk Booking Platform",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=834%3A13336&node-id=834-48646&viewport=340%2C356%2C0.38&t=hVYbHMDEUp3cpLrL-1&scaling=min-zoom&content-scaling=fixed",
+        "cls": "showcase-action-link action-case-study",
+        "text": "Case Study\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=834%3A13336&node-id=834-48646&viewport=340%2C356%2C0.38&t=hVYbHMDEUp3cpLrL-1&scaling=min-zoom&content-scaling=fixed",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://othership.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                  Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "saas",
+    "title": "Caboodle Services CPG Sales Platform",
+    "titleHtml": "Caboodle Services CPG Sales Platform",
+    "kicker": "",
+    "client": "Caboodle Services",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "+28% Trade Spend ROI",
+    "metricVal": "+28% Trade Spend ROI",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · Natural Product CPG &amp; Trade Management",
+    "challenge": "Natural CPG food & beverage sales teams dealt with fragmented distributor spreadsheets (UNFI, KeHE), messy UPC/SKU retail code mapping, and opaque trade promotion ROI.",
+    "solution": "Constructed a unified trade promotion management SaaS uniting distributor sales tracking, retail store performance heatmaps, and automated retailer SKU spec dictionaries.",
+    "tech": "React · TypeScript · D3.js · Data Tables · Financial Calculation Engine · Tailwind CSS",
+    "imageSrc": "/public/assets/aistudio/caboodle_6b7b81b7.jpg",
+    "imageAlt": "Caboodle Services CPG Sales Platform — Distributor Sales & Trade Promotion",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://caboodleservices.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                  Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "saas",
+    "title": "Exlo Testto Automation Platform",
+    "titleHtml": "Exlo Testto Automation Platform",
+    "kicker": "",
+    "client": "Exlo ITS",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "98.1% Automation Pass Rate",
+    "metricVal": "98.1% Automation Pass Rate",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · AI Process Automation &amp; QA",
+    "challenge": "Enterprise software teams struggled with manual test regression bottlenecks, complex multi-system workflow breaks, and opaque Python test orchestration.",
+    "solution": "Architected the Testto Cloud SaaS suite featuring codeless automated test execution, AI-driven process orchestration flow graphs, and real-time regression telemetry.",
+    "tech": "React · TypeScript · Python Orchestrator · WebGL Flow Graphs · Tailwind CSS · Docker &amp; Cloud",
+    "imageSrc": "/public/assets/aistudio/exlo_86240282.jpg",
+    "imageAlt": "Exlo Testto Automation Platform — AI Process Orchestration & QA",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://exelo.pl/en/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                  Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "saas",
+    "title": "Whiz Intelligent AI Advanced Insight Graph Technology",
+    "titleHtml": "Whiz Intelligent AI Advanced Insight Graph Technology",
+    "kicker": "",
+    "client": "Whiz AI",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "+3.2x Workflow Velocity",
+    "metricVal": "+3.2x Workflow Velocity",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · AI Workspace &amp; Knowledge Graph",
+    "challenge": "Cross-functional enterprise teams struggled with disjointed generative AI tools, prompt chaos, and opaque knowledge silos across complex data graphs.",
+    "solution": "Architected an advanced insight graph technology and intelligent AI workspace uniting interactive node graph exploration, prompt-to-workflow automation, and multi-model intelligence.",
+    "tech": "React · TypeScript · WebSockets · Tailwind CSS · AI Knowledge Graph · WebGL · Node.js",
+    "imageSrc": "/public/assets/aistudio/Whiz_5c14ef85.jpg",
+    "imageAlt": "Whiz Intelligent AI Advanced Insight Graph Technology — Knowledge Graph & Canvas",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://letswhiz.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "saas",
+    "title": "TalentX Enterprise Recruitment Suite",
+    "titleHtml": "TalentX Enterprise Recruitment Suite",
+    "kicker": "",
+    "client": "TalentX",
+    "year": "2026",
+    "yearTag": "2026",
+    "roi": "62% Faster Time-to-Hire",
+    "metricVal": "62% Faster Time-to-Hire",
+    "metricLabel": "",
+    "catLabel": "SaaS Platform · Enterprise Recruitment &amp; ATS",
+    "challenge": "Recruiting teams and hiring managers were overwhelmed by candidate volume, opaque interview scoring, and delayed multi-stakeholder hiring decisions.",
+    "solution": "Architected an intuitive enterprise ATS and talent pipeline platform featuring automated candidate scoring, visual stage progression boards, and unified interviewer feedback rubrics.",
+    "tech": "React · TypeScript · Tailwind CSS · Enterprise ATS Pipeline · Real-Time Collaboration · Node.js",
+    "imageSrc": "/public/assets/aistudio/TalentX_53c9fde6.jpg",
+    "imageAlt": "TalentX Enterprise Recruitment Suite — Pipeline & Candidate Scoring",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      }
+    ]
+  },
+  {
+    "category": "dashboard",
+    "title": "eBuddy Enterprise HRM &amp; Task Cockpit",
+    "titleHtml": "eBuddy Enterprise HRM &amp; Task Cockpit",
+    "kicker": "",
+    "client": "SSL Wireless",
+    "year": "2023",
+    "yearTag": "2023",
+    "roi": "350+ Office Workforce",
+    "metricVal": "350+ Office Workforce",
+    "metricLabel": "",
+    "catLabel": "Dashboard · Enterprise HRM &amp; Workforce Performance",
+    "challenge": "Supervisors and operations leadership managing 350+ employees faced fragmented sprint milestone reporting, delayed task review handoffs, and disjointed biometric punch-in / leave approval workflows.",
+    "solution": "Architected the comprehensive eBuddy Supervisor Cockpit uniting daily task statuses (WIP, Due, Review), sprint milestone tracking, real-time biometric attendance (Punch In/Out), and granular departmental leave telemetry.",
+    "tech": "React · TypeScript · Tailwind CSS · Biometric Auth API · Real-Time Task State Machines · Enterprise HRM",
+    "imageSrc": "/public/assets/aistudio/02.1_Supervisor_4a6ac342.jpg",
+    "imageAlt": "eBuddy Enterprise HRM &amp; Task Performance Dashboard — SSL Wireless",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://sslwireless.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Client Portal\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "dashboard",
+    "title": "AI Mail Autonomous Inbox &amp; Telemetry Cockpit",
+    "titleHtml": "AI Mail Autonomous Inbox &amp; Telemetry Cockpit",
+    "kicker": "",
+    "client": "Catalog / SSL Wireless",
+    "year": "2024",
+    "yearTag": "2024",
+    "roi": "79% AI Effectiveness",
+    "metricVal": "79% AI Effectiveness",
+    "metricLabel": "",
+    "catLabel": "Dashboard · AI Autonomous Triage &amp; Response Telemetry",
+    "challenge": "Enterprise knowledge workers and client service leads suffered from email inbox paralysis, high unanswered response backlogs, and lack of visibility into autonomous AI assistant drafting velocity.",
+    "solution": "Engineered an executive email intelligence dashboard providing real-time response volume distribution (75% AI vs 15% Human), priority follow-up triage queues, sub-12m average response times, and weekly email workload analytics.",
+    "tech": "React · TypeScript · D3.js Charts · AI Triage Engine · WebSocket · Tailwind CSS",
+    "imageSrc": "/public/assets/aistudio/ai-mail_875a0eab.jpg",
+    "imageAlt": "AI Mail Autonomous Inbox &amp; Response Telemetry Dashboard",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      }
+    ]
+  },
+  {
+    "category": "dashboard",
+    "title": "BAT Peachtree Finance &amp; Operations Cockpit",
+    "titleHtml": "BAT Peachtree Finance &amp; Operations Cockpit",
+    "kicker": "",
+    "client": "British American Tobacco (BAT)",
+    "year": "2023",
+    "yearTag": "2023",
+    "roi": "৳73.8 Cr. Monthly Velocity",
+    "metricVal": "৳73.8 Cr. Monthly Velocity",
+    "metricLabel": "",
+    "catLabel": "Dashboard · Enterprise Finance &amp; Field Operations",
+    "challenge": "British American Tobacco (BAT) leadership required unified real-time visibility across nationwide field distribution, brand-tier sales margins, daily agent commissions, and multi-district logistics expense telemetry spanning 1,930+ retail outlets.",
+    "solution": "Architected the BAT Peachtree executive finance and distribution performance cockpit, integrating real-time sales volume KPIs, brand category yield distributions (Premium, Aspirational, VFM), field force tracking, and regional expense telemetry.",
+    "tech": "React · TypeScript · D3.js · Data Visualization · High-Density Financial Analytics · Tailwind CSS · Enterprise ERP",
+    "imageSrc": "/public/assets/aistudio/BAT_Peachtree_285bf916.jpg",
+    "imageAlt": "BAT Peachtree Finance Performance &amp; Operations Cockpit — British American Tobacco",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://www.batbangladesh.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Client Portal\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "ecommerce",
+    "title": "Apex4U Omnichannel Footwear &amp; Lifestyle Store",
+    "titleHtml": "Apex4U Omnichannel Footwear &amp; Lifestyle Store",
+    "kicker": "",
+    "client": "Apex Footwear Ltd.",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "+38% Mobile Conversion",
+    "metricVal": "+38% Mobile Conversion",
+    "metricLabel": "",
+    "catLabel": "E-Commerce · Omnichannel Footwear &amp; Fashion",
+    "challenge": "Translating Bangladesh&#39;s leading footwear brand into a responsive, high-converting digital storefront with synchronized retail inventory and friction-free mobile checkout.",
+    "solution": "Architected high-speed responsive storefront featuring instant faceted SKU filtering, interactive footwear previews, and streamlined checkout integrating SSLCOMMERZ &amp; MFS.",
+    "tech": "Next.js · TypeScript · Tailwind CSS · Headless Commerce · Algolia · SSLCOMMERZ",
+    "imageSrc": "/public/assets/aistudio/apex4u_dfaf6ee2.jpg",
+    "imageAlt": "Apex4U Omnichannel Footwear &amp; Lifestyle Store — Men",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://apex4u.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "ecommerce",
+    "title": "Transcom Digital Electronics &amp; Appliance Megastore",
+    "titleHtml": "Transcom Digital Electronics &amp; Appliance Megastore",
+    "kicker": "",
+    "client": "Transcom Digital",
+    "year": "2026",
+    "yearTag": "2026",
+    "roi": "150k+ Monthly Orders",
+    "metricVal": "150k+ Monthly Orders",
+    "metricLabel": "",
+    "catLabel": "E-Commerce · Consumer Electronics &amp; Appliances",
+    "challenge": "Fragmented electronics catalog across premium global brands (Samsung, Sony, Whirlpool, Philips) with complex bank EMI financing schemes and nationwide logistics.",
+    "solution": "Engineered an enterprise e-commerce platform featuring automated 0% EMI calculators, official brand boutique storefronts, and real-time delivery slot dispatch tracking.",
+    "tech": "React · TypeScript · Tailwind CSS · Multi-Brand Catalog · EMI Gateway · Logistics APIs",
+    "imageSrc": "/public/assets/aistudio/transcom_84a76cc4.jpg",
+    "imageAlt": "Transcom Digital Consumer Electronics &amp; Appliance Megastore — Deals &amp; Categories",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://transcomdigital.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "app-design",
+    "title": "FastPay Mobile Digital Wallet",
+    "titleHtml": "FastPay Mobile Digital Wallet",
+    "kicker": "",
+    "client": "FastPay (Iraq &amp; Kurdistan)",
+    "year": "2019",
+    "yearTag": "2019",
+    "roi": "1.2M+ Active Wallets",
+    "metricVal": "1.2M+ Active Wallets",
+    "metricLabel": "",
+    "catLabel": "App Design · Fintech &amp; Digital Wallet",
+    "challenge": "Cash-dominant region required an accessible, multi-lingual digital wallet with seamless Mastercard issuance, P2P transfers, and QR merchant checkout.",
+    "solution": "Designed an ergonomic mobile wallet interface with biometric security, instant IQD/USD currency conversion, and thumb-zone optimized QR pay.",
+    "tech": "Flutter · Kotlin · Swift · Biometric Auth · Mastercard API · Microservices",
+    "imageSrc": "/public/assets/aistudio/fastpay-app_01058fda.jpg",
+    "imageAlt": "FastPay Mobile Digital Wallet — Cashless Payment & Mastercard Ecosystem",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://www.fast-pay.iq/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "app-design",
+    "title": "MyPeople Global Community App",
+    "titleHtml": "MyPeople Global Community App",
+    "kicker": "",
+    "client": "MyPeople Earth",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "+185% Community Engagement",
+    "metricVal": "+185% Community Engagement",
+    "metricLabel": "",
+    "catLabel": "App Design · Social Discovery &amp; Community",
+    "challenge": "Expats, cultural enthusiasts, and travelers lacked a dedicated social app for authentic intercultural events, community discussions, and shared heritage discovery.",
+    "solution": "Architected an intuitive global feed and interactive discovery map pairing local cultural celebrations with interest-based micro-communities.",
+    "tech": "React Native · TypeScript · Mapbox SDK · Cloudinary · Firebase RTDB",
+    "imageSrc": "/public/assets/aistudio/mypeople-earth_fe9d4ebe.jpg",
+    "imageAlt": "MyPeople Global Community App — Cultural Discovery &amp; Interest Groups",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=earth.mypeople&amp;hl=en",
+        "cls": "overflow-item-link live-link",
+        "text": "Google Play\n                    Store ↗"
+      }
+    ]
+  },
+  {
+    "category": "app-design",
+    "title": "Employee Buddy (eBuddy) Workforce App",
+    "titleHtml": "Employee Buddy (eBuddy) Workforce App",
+    "kicker": "",
+    "client": "SSL Wireless Enterprise",
+    "year": "2023",
+    "yearTag": "2023",
+    "roi": "99.2% Attendance Compliance",
+    "metricVal": "99.2% Attendance Compliance",
+    "metricLabel": "",
+    "catLabel": "App Design · Workforce &amp; Project Management",
+    "challenge": "Supervisors and operations teams managing enterprise workforces struggled with disjointed task status handoffs, manual punch-in clocking, and lack of real-time milestone Gantt timelines.",
+    "solution": "Architected the comprehensive eBuddy mobile companion app uniting task statuses (To-Do, WIP, Due, Done, Reviewed), biometric mobile attendance, team collaboration, and real-time Gantt project timelines.",
+    "tech": "Android · Kotlin · Real-Time Task State Machines · BLE Beacons · REST API · SSL Core",
+    "imageSrc": "/public/assets/aistudio/employeebuddy-app_8d956edf.jpg",
+    "imageAlt": "Employee Buddy (eBuddy) Mobile App — Task Status, Attendance &amp; Timeline",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=com.sslwireless.iot_smartoffice&amp;hl=en",
+        "cls": "overflow-item-link live-link",
+        "text": "Google Play\n                    Store ↗"
+      }
+    ]
+  },
+  {
+    "category": "app-design",
+    "title": "BASIC Bank Magpie Mobile Banking",
+    "titleHtml": "BASIC Bank Magpie Mobile Banking",
+    "kicker": "",
+    "client": "BASIC Bank PLC",
+    "year": "2022",
+    "yearTag": "2022",
+    "roi": "Zero-Friction Banking",
+    "metricVal": "Zero-Friction Banking",
+    "metricLabel": "",
+    "catLabel": "App Design · Mobile Banking &amp; Fintech",
+    "challenge": "State-owned bank customers encountered cumbersome in-branch transactions, legacy paperwork, and slow fund transfer verification.",
+    "solution": "Engineered the Magpie mobile banking experience: unified balance cockpits, two-factor OTP fund transfers to NPSB/BEFTN rails, and 1-tap utility bill payments.",
+    "tech": "Android · Java/Kotlin · Secure Banking SDK · SSL Encryption · ISO 8583",
+    "imageSrc": "/public/assets/aistudio/basic-bank-app_2c547417.jpg",
+    "imageAlt": "BASIC Bank Mobile Banking — Digital Fund Transfers & Utility Hub",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=910%3A1565&node-id=938-29328&viewport=97%2C187%2C0.16&t=Xz07mO5pxB90E8B0-1&scaling=min-zoom&content-scaling=fixed",
+        "cls": "showcase-action-link action-case-study",
+        "text": "Case Study\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=com.basicbanklimited.magpie&amp;hl=en",
+        "cls": "overflow-item-link live-link",
+        "text": "Google Play\n                    Store ↗"
+      }
+    ]
+  },
+  {
+    "category": "app-design",
+    "title": "Bondhu Chula Clean Energy App",
+    "titleHtml": "Bondhu Chula Clean Energy App",
+    "kicker": "",
+    "client": "Bangladesh Bondhu Foundation (BBF / GIZ)",
+    "year": "2022",
+    "yearTag": "2022",
+    "roi": "5M+ Stoves Monitored",
+    "metricVal": "5M+ Stoves Monitored",
+    "metricLabel": "",
+    "catLabel": "App Design · Clean Tech &amp; Sustainability",
+    "challenge": "Rural households and green energy technicians needed an accessible mobile tool for stove registration, carbon credit calculation, and maintenance dispatching.",
+    "solution": "Crafted an accessible mobile app with pictorial navigation, offline field data sync, carbon emission reduction charts, and on-demand technician bookings.",
+    "tech": "Android · SQLite Offline First · REST API · GIS Mapping · Multilingual Bangla/EN",
+    "imageSrc": "/public/assets/aistudio/bandhuchula-app_a1ba3a06.jpg",
+    "imageAlt": "Bondhu Chula Clean Energy App — Climate Impact &amp; Carbon Tracking",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://play.google.com/store/apps/details?id=com.sslwireless.bandhuchula&amp;hl=en",
+        "cls": "overflow-item-link live-link",
+        "text": "Google Play\n                    Store ↗"
+      }
+    ]
+  },
+  {
+    "category": "app-design",
+    "title": "SSLCOMMERZ Merchant App",
+    "titleHtml": "SSLCOMMERZ Merchant App",
+    "kicker": "",
+    "client": "SSLCOMMERZ / SSL Wireless",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "Real-Time Merchant Telemetry",
+    "metricVal": "Real-Time Merchant Telemetry",
+    "metricLabel": "",
+    "catLabel": "App Design · Fintech &amp; Merchant Mobile App",
+    "challenge": "Merchants managing retail storefronts and e-commerce payments lacked a unified native mobile app for live transaction tracking, instant payment link generation, refund approvals, and downloadable QR collections.",
+    "solution": "Designed the flagship SSLCOMMERZ Merchant native mobile app featuring instantaneous transaction tracking (৳90k+ daily monitoring), dynamic Payment Links, 1-tap refund processing, and unified merchant QR checkout.",
+    "tech": "React Native · iOS &amp; Android · REST API · Webhooks · SSLCOMMERZ Merchant Core",
+    "imageSrc": "/public/assets/aistudio/sslcommerz-merchant-app_65454ea9.jpg",
+    "imageAlt": "SSLCOMMERZ Merchant Mobile App — Transaction Tracking, Payment Links &amp; QR",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://sslcommerz.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Official Portal\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "fintech",
+    "title": "SSLCOMMERZ Payment Gateway &amp; Checkout",
+    "titleHtml": "SSLCOMMERZ Payment Gateway &amp; Checkout",
+    "kicker": "",
+    "client": "SSLCOMMERZ / Bangladesh Bank",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "18,000+ Active Merchants",
+    "metricVal": "18,000+ Active Merchants",
+    "metricLabel": "",
+    "catLabel": "Fintech · Payment Gateway &amp; Aggregator",
+    "challenge": "E-commerce enterprises in South Asia dealt with fragmented banking integrations, manual settlement reconciliation, and high checkout drop-offs across cards, MFS, and internet banking.",
+    "solution": "Architected the flagship SSLCOMMERZ multi-channel checkout engine with integrated Bangla QR, 30+ card &amp; MFS rails, automated T+1 settlement cycles, and PCI-DSS certified security.",
+    "tech": "React · TypeScript · Node.js · PCI-DSS Level 1 · REST API · Webhooks",
+    "imageSrc": "/public/assets/aistudio/sslcommerz_78617072.jpg",
+    "imageAlt": "SSLCOMMERZ Multi-Channel Payment Gateway — Checkout Engine &amp; Mobile Experience",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://sslcommerz.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "fintech",
+    "title": "Join SSLCOMMERZ Merchant Onboarding",
+    "titleHtml": "Join SSLCOMMERZ Merchant Onboarding",
+    "kicker": "",
+    "client": "SSLCOMMERZ Business / SSL Wireless",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "15-Min Digital Onboarding",
+    "metricVal": "15-Min Digital Onboarding",
+    "metricLabel": "",
+    "catLabel": "Fintech · Merchant Onboarding &amp; Digital KYC",
+    "challenge": "New e-commerce merchants and MSMEs endured weeks of paper application friction, manual NID verifications, and slow merchant account activation.",
+    "solution": "Architected the Join SSLCOMMERZ self-service onboarding studio featuring progressive 4-step digital KYC, automated NID &amp; photo verification, banking tier selection, and immediate 7-day trial sandbox activation.",
+    "tech": "React · TypeScript · Next.js · OCR Document Validation · Automated KYC · Tailwind CSS",
+    "imageSrc": "/public/assets/aistudio/join-sslcommerz_68ce117b.jpg",
+    "imageAlt": "Join SSLCOMMERZ Merchant Onboarding — Digital KYC &amp; NID Verification",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://join.sslcommerz.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "fintech",
+    "title": "BASIC Bank Mobile Banking App",
+    "titleHtml": "BASIC Bank Mobile Banking App",
+    "kicker": "",
+    "client": "BASIC Bank PLC",
+    "year": "2022",
+    "yearTag": "2022",
+    "roi": "Zero-Friction Banking",
+    "metricVal": "Zero-Friction Banking",
+    "metricLabel": "",
+    "catLabel": "Fintech · Mobile Banking &amp; Fund Transfers",
+    "challenge": "State-owned bank customers encountered cumbersome in-branch queues, legacy paperwork, and slow multi-account fund transfer verification.",
+    "solution": "Engineered the modern BASIC Bank mobile banking app: multi-account cockpit, instant RTGS, NPSB &amp; BEFTN transfers, E-Wallet integration, and 1-tap utility bill payments.",
+    "tech": "React Native · Android/iOS · Java Spring Boot · Oracle Core Banking · 2FA HSM Security",
+    "imageSrc": "/public/assets/aistudio/basic-bank-app_2c547417.jpg",
+    "imageAlt": "BASIC Bank Mobile Banking App — Account Dashboard &amp; RTGS Transfers",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=910%3A1565&node-id=938-29328&viewport=97%2C187%2C0.16&t=Xz07mO5pxB90E8B0-1&scaling=min-zoom&content-scaling=fixed",
+        "cls": "showcase-action-link action-case-study",
+        "text": "Case Study\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/proto/1BFEvwIl892gzBAU1Tc4wm/Resume-and-Presentation?page-id=910%3A1565&node-id=938-29328&viewport=97%2C187%2C0.16&t=Xz07mO5pxB90E8B0-1&scaling=min-zoom&content-scaling=fixed",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://www.basicbanklimited.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "fintech",
+    "title": "NRB Connect Real-Time Account Opening",
+    "titleHtml": "NRB Connect Real-Time Account Opening",
+    "kicker": "",
+    "client": "NRB Bank PLC / SSL Wireless",
+    "year": "2024",
+    "yearTag": "2024",
+    "roi": "100% Digital eKYC",
+    "metricVal": "100% Digital eKYC",
+    "metricLabel": "",
+    "catLabel": "Fintech · Online Account Opening &amp; eKYC",
+    "challenge": "Non-Resident Bangladeshis (NRBs) and domestic individuals faced multi-week paper delays, in-person branch mandates, and fragmented requirements to open offshore banking and currency accounts.",
+    "solution": "Architected NRB Connect: a real-time online account opening engine featuring progressive eKYC validation, offshore banking origination, EPZ enterprise onboarding, and instant request ID tracking.",
+    "tech": "React · TypeScript · eKYC Biometric Verification · CBS Core Banking · Microservices · Tailwind CSS",
+    "imageSrc": "/public/assets/aistudio/nrb-connect_1ef15465.jpg",
+    "imageAlt": "NRB Connect Real-Time Online Account Opening — Offshore &amp; eKYC Banking",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://connect.nrbbankbd.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "fintech",
+    "title": "FastPay Kurdistan Digital Wallet",
+    "titleHtml": "FastPay Kurdistan Digital Wallet",
+    "kicker": "",
+    "client": "FastPay (Iraq &amp; Kurdistan)",
+    "year": "2019",
+    "yearTag": "2019",
+    "roi": "1M+ Users · PA-DSS",
+    "metricVal": "1M+ Users · PA-DSS",
+    "metricLabel": "",
+    "catLabel": "Fintech · Mobile Digital Wallet &amp; Cards",
+    "challenge": "Middle Eastern regional consumers needed a reliable, certified cashless payment infrastructure supporting cross-border Mastercards and local merchant acceptance.",
+    "solution": "Designed the comprehensive FastPay financial ecosystem: instant deposits &amp; withdrawals, 200+ merchant integrations, localized Kurdish/Arabic/English interfaces, and contactless QR checkout.",
+    "tech": "Flutter · Kotlin · Swift · Mastercard Network · ISO 8583 · Microservices",
+    "imageSrc": "/public/assets/aistudio/fastpay-app_01058fda.jpg",
+    "imageAlt": "FastPay Mobile Digital Wallet — Instant Deposit, Withdrawal &amp; 1M+ Users",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://www.fast-pay.iq/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "fintech",
+    "title": "The Premier Bank Corporate Banking",
+    "titleHtml": "The Premier Bank Corporate Banking",
+    "kicker": "",
+    "client": "The Premier Bank PLC",
+    "year": "2025",
+    "yearTag": "2025",
+    "roi": "৳98.5 Cr. Transfer Volume",
+    "metricVal": "৳98.5 Cr. Transfer Volume",
+    "metricLabel": "",
+    "catLabel": "Fintech · Enterprise Corporate Banking",
+    "challenge": "Large-scale corporate conglomerates required centralized cash management, syndicated project loan tracking, nationwide collection booth integration, and bulk corporate payroll.",
+    "solution": "Architected the modern Corporate Banking terminal: multi-tier approval matrix, automated bulk disbursement, trade finance L/C tracking, and real-time treasury telemetry.",
+    "tech": "React · TypeScript · Tailwind CSS · High-Density Tables · Enterprise Core Banking API",
+    "imageSrc": "/public/assets/aistudio/premier-bank_4c2807a0.jpg",
+    "imageAlt": "The Premier Bank Corporate Banking Suite — Transfer Statistics &amp; Treasury",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://thepremierbankplc.com/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "healthcare",
+    "title": "Algocyte - Oxford Immune Algorithmics (OIA)",
+    "titleHtml": "Algocyte - Oxford Immune Algorithmics (OIA)",
+    "kicker": "",
+    "client": "Oxford Immune Algorithmics (OIA)",
+    "year": "2022",
+    "yearTag": "2022",
+    "roi": "Sub-Second Anomaly Triage",
+    "metricVal": "Sub-Second Anomaly Triage",
+    "metricLabel": "",
+    "catLabel": "Health Care · Precision AI &amp; Immune Telemetry",
+    "challenge": "Complex cellular hematology and biomarker telemetry data was difficult for clinical oncologists to interpret rapidly during time-critical patient evaluations.",
+    "solution": "Engineered high-density, real-time hematology telemetry visualization with predictive immune-system anomaly alerts and longitudinal patient biomarker graphs.",
+    "tech": "React · TypeScript · WebGL Canvas · D3.js · HIPAA Telemetry · Python Analytics",
+    "imageSrc": "/public/assets/aistudio/algocyte_86ef6956.jpg",
+    "imageAlt": "Algocyte - Oxford Immune Algorithmics (OIA) — Clinical Biomarker Dashboard &amp; Immune Telemetry",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://algocyte.ai/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  },
+  {
+    "category": "healthcare",
+    "title": "Gain Health Large-Scale Food Fortification",
+    "titleHtml": "Gain Health Large-Scale Food Fortification",
+    "kicker": "",
+    "client": "Gain Health",
+    "year": "2026",
+    "yearTag": "2026",
+    "roi": "1.2B People Access Goal",
+    "metricVal": "1.2B People Access Goal",
+    "metricLabel": "",
+    "catLabel": "Health Care · Large-Scale Food Fortification &amp; Nutrition",
+    "challenge": "Global food fortification initiatives faced fragmented supply chains, opaque compliance reporting, and dispersed field tracking across multiple developing regions.",
+    "solution": "Designed the centralized food fortification intelligence portal, tracking production compliance, quality audits, and distribution velocity to improve access to fortified foods to 1.2 billion people by 2025.",
+    "tech": "React · TypeScript · Data Visualization · GIS Mapping · Supply Chain Analytics · REST API",
+    "imageSrc": "/src/assets/images/othership_clean_ui_1792223295350.jpg",
+    "imageAlt": "Gain Health Large-Scale Food Fortification Platform",
+    "descHtml": "",
+    "tags": [],
+    "links": [
+      {
+        "href": "https://www.figma.com/proto/preview",
+        "cls": "showcase-action-link action-proto",
+        "text": "Prototype\n                ↗"
+      },
+      {
+        "href": "https://www.figma.com/@aam_uiux",
+        "cls": "overflow-item-link",
+        "text": "View in Figma\n                    Source ↗"
+      },
+      {
+        "href": "https://www.gainhealth.org/",
+        "cls": "overflow-item-link live-link",
+        "text": "Live Site\n                    Visit ↗"
+      }
+    ]
+  }
+]
